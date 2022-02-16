@@ -1,0 +1,182 @@
+.toolbar-scholarship {
+  color: white!important;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-top: -16px;
+  padding: 1px 16px 16px;
+
+  &.undefined {
+    background: var(--ion-color-indefinit);
+  }
+
+  &.open-soon {
+    background: var(--ion-color-obreaviat);
+  }
+
+  &.opened {
+    background: var(--ion-color-obert);
+  }
+
+  &.closed {
+    background: var(--ion-color-terminitancat);
+  }
+
+  ion-row.md.hydrated {
+    align-items: center;
+  }
+}
+
+.scholarship-status {
+  font-weight: 500;
+
+  span {
+    font-weight: 900;
+  }
+
+  .open-soon {
+    color: var(--ion-color-obreaviat-shade);
+  }
+
+  .opened {
+    color: var(--ion-color-obert-shade);
+
+    &.data {
+      font-size: 85%;
+      display: flex;
+      // align-items: center;
+      color: white;
+      font-weight: 400;
+      align-items: center;
+      margin-top: 4px;
+
+      &.undefined {
+        color: var(--ion-color-indefinit-shade);
+      }
+
+      &.open-soon {
+        color: var(--ion-color-obreaviat-shade);
+      }
+
+      &.opened {
+        color: var(--ion-color-obert-shade);
+      }
+
+      &.closed {
+        color: var(--ion-color-terminitancat-shade);
+      }
+
+      .icon-library {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .closed {
+    color: var(--ion-color-terminitancat-shade);
+  }
+
+  .undefined {
+    color: var(--ion-color-indefinit-shade);
+  }
+}
+
+h4 {
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  background-color: var(--ion-color-white);
+  margin-bottom: 16px;
+
+  .accordion-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--ion-color-white);
+  }
+
+  .label-title-category {    
+    ion-icon {
+      margin: 0 5px;
+    }
+  }
+}
+
+.scholarship-date {
+  font-size: 12px;
+  padding-left: 3px;
+  top: 1px;
+  position: relative;
+}
+
+.until {
+  font-size: 12px;
+  color: var(--ion-color-obert-shade);
+  font-weight: 400;
+  padding-left: 3px;
+  top: 1px;
+  position: relative;
+}
+
+.suport {
+  display: flex;
+  justify-content: flex-end;
+
+  &.undefined {
+    color: var(--ion-color-indefinit-shade);
+
+    a {
+      color: var(--ion-color-indefinit-shade);
+    }
+  }
+
+  &.open-soon {
+    color: var(--ion-color-obreaviat-shade);
+
+    a {
+      color: var(--ion-color-obreaviat-shade);
+    }
+  }
+
+  &.opened {
+    color: var(--ion-color-obert-shade);
+
+    a {
+      color: var(--ion-color-obert-shade);
+    }
+  }
+
+  &.closed {
+    color: var(--ion-color-terminitancat-shade);
+
+    a {
+      color: var(--ion-color-terminitancat-shade);
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ion-icon {
+    // color: var(--ion-color-primary);
+    font-size: 120%;
+  }
+
+  ion-row.md.hydrated {
+    align-items: center;
+  }
+}
+
+.description {
+  background-color: var(--ion-color-white);
+  margin-bottom: 16px;
+  margin-top: 16px;
+}

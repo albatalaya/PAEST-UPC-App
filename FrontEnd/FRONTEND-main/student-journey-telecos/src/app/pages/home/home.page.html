@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{ 'HOME.NAME_APP' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fondo">
+  <app-toast-notification [backgroundColor]="notification?.backgroundColor" [icon]="notification?.icon" [title]=notification?.title [text]="notification?.text"></app-toast-notification>
+  <ion-slides class="slides-home" pager="true" [options]="slideOpts">
+
+      <ion-slide *ngFor="let slide of slider?.slides">
+          <div class="slide">
+            <app-home-carrusel-component *ngIf="!slide.languages[language].isExternal"
+              [link]="slide.languages[language].link"
+              [imageBackground]="slide.image"
+              [icon]="slide.icon"
+              [text]="slide.languages[language].title"
+            ></app-home-carrusel-component>
+            <app-home-carrusel-component *ngIf="slide.languages[language].isExternal"
+              (click)="openExternalLink(slide.languages[language].link)"
+              [imageBackground]="slide.image"
+              [icon]="slide.icon"
+              [text]="slide.languages[language].title"
+            ></app-home-carrusel-component>
+            <!-- <app-home-carrusel-component *ngIf="slide.languages[language].isExternal"
+              (click)="openExternalLink(slide.languages[language].link)"
+              [imageBackground]="slide.image"
+              [icon]="slide.icon"
+              [text]="slide.title"
+            ></app-home-carrusel-component> -->
+          </div>
+      </ion-slide>
+  </ion-slides>
+
+  <div *ngIf="announcements" class="announcements-card">
+    <div class="announcements">
+      <span class="avisos tabs blue">{{ 'ANNOUNCEMENTS.NEW_ANNOUNCEMENT' | translate }}</span>
+      <span class="allAvisos see-all blue" [routerLink]="['/pages/all-announcements/false']">{{ 'ANNOUNCEMENTS.SEE_ALL' | translate }}</span>
+    </div>
+
+    <div class="announcement" *ngFor="let announcement of announcementsFiltered">
+      <app-announcement [announcement]="announcement" [home]="true" (announcementDeleted)="announcementDeleted($event)"></app-announcement>
+    </div>
+
+    <div class="noAnnouncements" *ngIf="!announcementsFiltered.length">
+      <span>{{ 'ANNOUNCEMENTS.NO_ANNOUNCEMENT' | translate }}</span>
+    </div>
+  </div>
+
+  <ion-toolbar id="toolbar-1" color="secondary" mode="md" *ngIf="configuration?.isEventsInHome">
+      <ion-segment (ionChange)="segmentChanged($event)" class="rankings-toolbar" mode="md" value="news">
+        <ion-segment-button value="news" class="button-events" mode="md">
+          <ion-label class="tabs">{{ 'HOME.PUBLIC.TAB1.TITLE' | translate }}</ion-label>
+        </ion-segment-button>
+        <ion-segment-button (ionChange)="segmentChanged($event)" value="events" class="button-events" mode="md">
+          <ion-label class="tabs">{{ 'HOME.PUBLIC.TAB2.TITLE' | translate }}</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  <div class="title-home" *ngIf="!configuration?.isEventsInHome">
+    {{ 'HOME.PUBLIC.TAB1.TITLE' | translate }}
+  </div>
+  <div class="content-news" *ngIf="selectedTab === 'news' && news && errorNews === undefined ; else skeleton">
+    <app-card-news class="card-news" *ngFor="let item of news" [newsItem]="item" [routerLink]="['/pages/home/news', item?.idAPI]" [queryParams]="{backPage: '/pages/home'}">
+    </app-card-news>
+  </div>
+  <ion-infinite-scroll *ngIf="selectedTab === 'news' && news && errorNews === undefined" threshold="1xpx" (ionInfinite)="loadMoreNews($event)" class="load-more-news">
+    <ion-infinite-scroll-content loadingSpinner="null" class="load-more-color">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  <div *ngIf="selectedTab === 'news' &&  errorNews">
+    <app-errors [error]="errorNews"></app-errors>
+  </div>
+  <ng-template #skeleton>
+    <div class="skeleton-content-card" *ngIf="selectedTab === 'news' && !news && errorNews === undefined">
+      <div class="card-skeleton" *ngFor="let item of [1, 2, 3, 4, 5, 6]">
+          <div class="card-skeleton-img">
+              <ion-skeleton-text animated></ion-skeleton-text>
+              </div>
+              <div>
+                <div>
+                    <ion-skeleton-text animated></ion-skeleton-text>
+                </div>
+                <div>
+                    <ion-skeleton-text animated></ion-skeleton-text>
+                </div>
+              </div>
+        </div>
+      </div>
+    </ng-template>
+    <div *ngIf="selectedTab === 'events' && (events || errorEvents !== undefined); else skeleton2" class="events">
+      <app-list-events [apiEvents]="events" [viewAll]="false" [errorEvents]="errorEvents"></app-list-events>
+    </div>
+    <ng-template #skeleton2>
+      <ion-list *ngIf="selectedTab === 'events' && !events">
+        <ion-list-header>
+          <ion-skeleton-text animated style="width: 20%"></ion-skeleton-text>
+        </ion-list-header>
+        <ion-item *ngFor="let item of [1, 2, 3, 4, 5, 6]">
+          <ion-thumbnail slot="start">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </ion-thumbnail>
+          <ion-label>
+            <h3>
+              <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+            </h3>
+            <p>
+              <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+            </p>
+            <p>
+              <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ng-template>
+  </div>
+</ion-content>

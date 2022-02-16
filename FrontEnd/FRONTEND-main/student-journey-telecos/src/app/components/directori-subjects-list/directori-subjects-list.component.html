@@ -1,0 +1,28 @@
+<div class="subjects">
+  <h2 class= "quatri"><b>{{matricula.subjects[0].curs}}-{{matricula.subjects[0].semester}}</b></h2>
+  <a detail-none class="accordion" *ngFor="let subject of matricula.subjects">
+    <div class="accordion-content" (click)="expandItem(subject.codiUPC)">
+      <div class="nombre" style="word-wrap:break-word;">
+        <ion-label  text-wrap class="label-title-category subtitle-m black">
+          {{subject.nomCat}}
+        </ion-label>
+      </div>
+      <div>
+        <ion-icon [name]="!subject.expanded ? 'chevron-down-outline' :'chevron-up-outline'" item-end></ion-icon>
+      </div>
+    </div>
+
+
+    <app-expandable [expandHeight]="1000" [expanded]="subject.expanded">
+      <div class="professors blue">
+          <div *ngFor= "let professor of subject.professors">
+            <p [routerLink]="['/pages/professorat/'+subject.codiUPC+'/'+professor.id_prof]">
+              <u>{{professor.nom}} {{professor.cognoms}}</u>
+            </p>
+          </div>
+      </div>
+    </app-expandable>
+
+    
+  </a>
+</div>

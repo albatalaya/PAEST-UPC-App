@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button mode="md" text=""></ion-back-button>
+      </ion-buttons>
+      <ion-title class="title-grade">{{grade?.name}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <div>
+    <ion-searchbar class="seach-bar" inputmode="text" placeholder="{{'SCHOLARSHIPS.SEARCH' | translate}}" mode="md" debounce="500" (ionChange)="filterItems($event)"></ion-searchbar>
+    <span class="title-subject subtitle-g black">{{'NOTE_CONSULTATION.MANDATORY' | translate}}</span>
+    <app-subjects-list *ngIf="subjectsObligatories && subjectsObligatories.length > 0" [subjects]="subjectsObligatories"></app-subjects-list>
+    <div *ngIf="!subjectsObligatories">
+        <ion-skeleton-text  animated style="height: 25px; margin-top: 15px; width: 80%; margin-left: 10%;" *ngFor="let item of [0,1,2,3]"></ion-skeleton-text>
+      </div>
+    <span class="noResults" *ngIf="subjectsObligatories && subjectsObligatories.length === 0">{{'NOTE_CONSULTATION.NO_RESUTS_SEARCH_MANDATORY' | translate}}</span>
+  
+    <br />
+    <span class="title-subject subtitle-g black">{{'NOTE_CONSULTATION.OPTIONAL' | translate}}</span>
+    <app-subjects-list *ngIf="subjectsOptatives && subjectsOptatives.length > 0" [subjects]="subjectsOptatives"></app-subjects-list>
+    <div *ngIf="!subjectsOptatives">
+      <ion-skeleton-text  animated style="height: 25px; margin-top: 15px; width: 80%; margin-left: 10%;" *ngFor="let item of [0,1,2,3]"></ion-skeleton-text>
+    </div>
+    <span class="noResults" *ngIf="subjectsOptatives && subjectsOptatives.length === 0">{{'NOTE_CONSULTATION.NO_RESUTS_SEARCH_OPTIONAL' | translate}}</span>
+  </div>
+</ion-content>

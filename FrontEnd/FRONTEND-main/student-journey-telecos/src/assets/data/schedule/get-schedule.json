@@ -1,0 +1,1986 @@
+{
+    "lastUpdated":"2021-04-19 06:06:24",
+    "items":[
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-04-06T08:00:00.000Z",
+          "endTime":"2021-04-06T10:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-04-06T10:00:00.000Z",
+          "endTime":"2021-04-06T11:00:00.000Z",
+          "aules":[
+             "TR5 2.2"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-04-06T11:00:00.000Z",
+          "endTime":"2021-04-06T13:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-04-07T06:00:00.000Z",
+          "endTime":"2021-04-07T08:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-04-08T07:00:00.000Z",
+          "endTime":"2021-04-08T08:00:00.000Z",
+          "aules":[
+             "TR5 2.6"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-04-08T08:00:00.000Z",
+          "endTime":"2021-04-08T10:00:00.000Z",
+          "aules":[
+             "TR5 L.Q.1.70"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-04-08T10:00:00.000Z",
+          "endTime":"2021-04-08T12:00:00.000Z",
+          "aules":[
+             "TR5 3.7"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"GUILLAMON GRABOLOSA",
+                "nom":"ANTONI"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-04-09T08:00:00.000Z",
+          "endTime":"2021-04-09T11:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-04-12T07:00:00.000Z",
+          "endTime":"2021-04-12T08:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-04-12T08:00:00.000Z",
+          "endTime":"2021-04-12T09:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"ESPAI AERI, NAVEGACIÓ I INFRAESTRUCTURES",
+          "nomEsp":"ESPACIO AÉREO, NAVEGACIÓN E INFRAESTRUCTURAS",
+          "nomEng":"AIRSPACE, AIR NAVIGATION AND INFRASTRUCTURE",
+          "sigles":"ENIA",
+          "cod":"220008",
+          "id":"220008",
+          "startTime":"2021-04-12T09:00:00.000Z",
+          "endTime":"2021-04-12T12:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"11"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-04-22T07:00:00.000Z",
+          "endTime":"2021-04-22T08:00:00.000Z",
+          "aules":[
+             "TR5 2.6"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-04-22T08:00:00.000Z",
+          "endTime":"2021-04-22T10:00:00.000Z",
+          "aules":[
+             "TR5 LF2.1.85"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-04-22T10:00:00.000Z",
+          "endTime":"2021-04-22T12:00:00.000Z",
+          "aules":[
+             "TR5 3.7"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"GUILLAMON GRABOLOSA",
+                "nom":"ANTONI"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-04-23T08:00:00.000Z",
+          "endTime":"2021-04-23T11:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-04-26T07:00:00.000Z",
+          "endTime":"2021-04-26T08:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-04-26T08:00:00.000Z",
+          "endTime":"2021-04-26T09:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"ESPAI AERI, NAVEGACIÓ I INFRAESTRUCTURES",
+          "nomEsp":"ESPACIO AÉREO, NAVEGACIÓN E INFRAESTRUCTURAS",
+          "nomEng":"AIRSPACE, AIR NAVIGATION AND INFRASTRUCTURE",
+          "sigles":"ENIA",
+          "cod":"220008",
+          "id":"220008",
+          "startTime":"2021-04-26T09:00:00.000Z",
+          "endTime":"2021-04-26T12:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"11"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-04-27T08:00:00.000Z",
+          "endTime":"2021-04-27T10:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-04-27T10:00:00.000Z",
+          "endTime":"2021-04-27T11:00:00.000Z",
+          "aules":[
+             "TR5 2.2"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-04-27T11:00:00.000Z",
+          "endTime":"2021-04-27T13:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-04-28T06:00:00.000Z",
+          "endTime":"2021-04-28T08:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-04-29T07:00:00.000Z",
+          "endTime":"2021-04-29T08:00:00.000Z",
+          "aules":[
+             "TR5 2.6"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-04-29T08:00:00.000Z",
+          "endTime":"2021-04-29T10:00:00.000Z",
+          "aules":[
+             "TR5 L.Q.1.70"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-04-29T10:00:00.000Z",
+          "endTime":"2021-04-29T12:00:00.000Z",
+          "aules":[
+             "TR5 3.7"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"GUILLAMON GRABOLOSA",
+                "nom":"ANTONI"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-04-30T08:00:00.000Z",
+          "endTime":"2021-04-30T11:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-03T07:00:00.000Z",
+          "endTime":"2021-05-03T08:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-03T08:00:00.000Z",
+          "endTime":"2021-05-03T09:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"ESPAI AERI, NAVEGACIÓ I INFRAESTRUCTURES",
+          "nomEsp":"ESPACIO AÉREO, NAVEGACIÓN E INFRAESTRUCTURAS",
+          "nomEng":"AIRSPACE, AIR NAVIGATION AND INFRASTRUCTURE",
+          "sigles":"ENIA",
+          "cod":"220008",
+          "id":"220008",
+          "startTime":"2021-05-03T09:00:00.000Z",
+          "endTime":"2021-05-03T12:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"11"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-05-04T08:00:00.000Z",
+          "endTime":"2021-05-04T10:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-05-04T10:00:00.000Z",
+          "endTime":"2021-05-04T11:00:00.000Z",
+          "aules":[
+             "TR5 2.2"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-05-04T11:00:00.000Z",
+          "endTime":"2021-05-04T13:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-05-05T06:00:00.000Z",
+          "endTime":"2021-05-05T08:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-05-07T08:00:00.000Z",
+          "endTime":"2021-05-07T11:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-10T07:00:00.000Z",
+          "endTime":"2021-05-10T08:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-10T08:00:00.000Z",
+          "endTime":"2021-05-10T09:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"ESPAI AERI, NAVEGACIÓ I INFRAESTRUCTURES",
+          "nomEsp":"ESPACIO AÉREO, NAVEGACIÓN E INFRAESTRUCTURAS",
+          "nomEng":"AIRSPACE, AIR NAVIGATION AND INFRASTRUCTURE",
+          "sigles":"ENIA",
+          "cod":"220008",
+          "id":"220008",
+          "startTime":"2021-05-10T09:00:00.000Z",
+          "endTime":"2021-05-10T12:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"11"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-05-11T08:00:00.000Z",
+          "endTime":"2021-05-11T10:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-05-11T10:00:00.000Z",
+          "endTime":"2021-05-11T11:00:00.000Z",
+          "aules":[
+             "TR5 2.2"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-05-11T11:00:00.000Z",
+          "endTime":"2021-05-11T13:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-05-12T06:00:00.000Z",
+          "endTime":"2021-05-12T08:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-05-13T07:00:00.000Z",
+          "endTime":"2021-05-13T08:00:00.000Z",
+          "aules":[
+             "TR5 2.6"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-05-13T08:00:00.000Z",
+          "endTime":"2021-05-13T10:00:00.000Z",
+          "aules":[
+             "TR5 L.Q.1.70"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-13T10:00:00.000Z",
+          "endTime":"2021-05-13T12:00:00.000Z",
+          "aules":[
+             "TR5 3.7"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"GUILLAMON GRABOLOSA",
+                "nom":"ANTONI"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-05-14T08:00:00.000Z",
+          "endTime":"2021-05-14T11:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-17T07:00:00.000Z",
+          "endTime":"2021-05-17T08:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-17T08:00:00.000Z",
+          "endTime":"2021-05-17T09:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"ESPAI AERI, NAVEGACIÓ I INFRAESTRUCTURES",
+          "nomEsp":"ESPACIO AÉREO, NAVEGACIÓN E INFRAESTRUCTURAS",
+          "nomEng":"AIRSPACE, AIR NAVIGATION AND INFRASTRUCTURE",
+          "sigles":"ENIA",
+          "cod":"220008",
+          "id":"220008",
+          "startTime":"2021-05-17T09:00:00.000Z",
+          "endTime":"2021-05-17T12:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"11"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-05-18T08:00:00.000Z",
+          "endTime":"2021-05-18T10:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-05-18T10:00:00.000Z",
+          "endTime":"2021-05-18T11:00:00.000Z",
+          "aules":[
+             "TR5 2.2"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-05-18T11:00:00.000Z",
+          "endTime":"2021-05-18T13:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-05-19T06:00:00.000Z",
+          "endTime":"2021-05-19T08:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-05-20T07:00:00.000Z",
+          "endTime":"2021-05-20T08:00:00.000Z",
+          "aules":[
+             "TR5 2.6"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-05-20T08:00:00.000Z",
+          "endTime":"2021-05-20T10:00:00.000Z",
+          "aules":[
+             "TR5 LF2.1.85"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-20T10:00:00.000Z",
+          "endTime":"2021-05-20T12:00:00.000Z",
+          "aules":[
+             "TR5 3.7"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"GUILLAMON GRABOLOSA",
+                "nom":"ANTONI"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-05-21T08:00:00.000Z",
+          "endTime":"2021-05-21T11:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-24T07:00:00.000Z",
+          "endTime":"2021-05-24T08:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-24T08:00:00.000Z",
+          "endTime":"2021-05-24T09:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"ESPAI AERI, NAVEGACIÓ I INFRAESTRUCTURES",
+          "nomEsp":"ESPACIO AÉREO, NAVEGACIÓN E INFRAESTRUCTURAS",
+          "nomEng":"AIRSPACE, AIR NAVIGATION AND INFRASTRUCTURE",
+          "sigles":"ENIA",
+          "cod":"220008",
+          "id":"220008",
+          "startTime":"2021-05-24T09:00:00.000Z",
+          "endTime":"2021-05-24T12:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"11"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-05-25T08:00:00.000Z",
+          "endTime":"2021-05-25T10:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-05-25T10:00:00.000Z",
+          "endTime":"2021-05-25T11:00:00.000Z",
+          "aules":[
+             "TR5 2.2"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-05-25T11:00:00.000Z",
+          "endTime":"2021-05-25T13:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-05-26T06:00:00.000Z",
+          "endTime":"2021-05-26T08:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-05-27T07:00:00.000Z",
+          "endTime":"2021-05-27T08:00:00.000Z",
+          "aules":[
+             "TR5 2.6"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-05-27T08:00:00.000Z",
+          "endTime":"2021-05-27T10:00:00.000Z",
+          "aules":[
+             "TR5 L.Q.1.70"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-27T10:00:00.000Z",
+          "endTime":"2021-05-27T12:00:00.000Z",
+          "aules":[
+             "TR5 3.7"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"GUILLAMON GRABOLOSA",
+                "nom":"ANTONI"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-05-28T08:00:00.000Z",
+          "endTime":"2021-05-28T11:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-31T07:00:00.000Z",
+          "endTime":"2021-05-31T08:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-05-31T08:00:00.000Z",
+          "endTime":"2021-05-31T09:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"HARO CASES",
+                "nom":"JAIME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"ESPAI AERI, NAVEGACIÓ I INFRAESTRUCTURES",
+          "nomEsp":"ESPACIO AÉREO, NAVEGACIÓN E INFRAESTRUCTURAS",
+          "nomEng":"AIRSPACE, AIR NAVIGATION AND INFRASTRUCTURE",
+          "sigles":"ENIA",
+          "cod":"220008",
+          "id":"220008",
+          "startTime":"2021-05-31T09:00:00.000Z",
+          "endTime":"2021-05-31T12:00:00.000Z",
+          "aules":[
+             "TR1 2.08"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"11"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-06-01T08:00:00.000Z",
+          "endTime":"2021-06-01T10:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"1",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-06-01T10:00:00.000Z",
+          "endTime":"2021-06-01T11:00:00.000Z",
+          "aules":[
+             "TR5 2.2"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-06-01T11:00:00.000Z",
+          "endTime":"2021-06-01T13:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             
+          ],
+          "idioma":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"EXPRESSIÓ GRÀFICA",
+          "nomEsp":"EXPRESIÓN GRÁFICA",
+          "nomEng":"GRAPHIC EXPRESSION",
+          "sigles":"EG",
+          "cod":"220010",
+          "id":"220010",
+          "startTime":"2021-06-02T06:00:00.000Z",
+          "endTime":"2021-06-02T08:00:00.000Z",
+          "aules":[
+             "TR5 PC5"
+          ],
+          "tipusActivitat":"T",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"QUILES ZAGUIRRE",
+                "nom":"MARIA"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-06-03T07:00:00.000Z",
+          "endTime":"2021-06-03T08:00:00.000Z",
+          "aules":[
+             "TR5 2.6"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CORTES IZQUIERDO",
+                "nom":"M. PILAR"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-06-03T08:00:00.000Z",
+          "endTime":"2021-06-03T10:00:00.000Z",
+          "aules":[
+             "TR5 LF2.1.85"
+          ],
+          "tipusActivitat":"L",
+          "professors":[
+             {
+                "grup":"13",
+                "cognoms":"CALAF ZAYAS",
+                "nom":"JAUME"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"13"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-06-03T10:00:00.000Z",
+          "endTime":"2021-06-03T12:00:00.000Z",
+          "aules":[
+             "TR5 3.7"
+          ],
+          "tipusActivitat":"P",
+          "professors":[
+             {
+                "grup":"12",
+                "cognoms":"GUILLAMON GRABOLOSA",
+                "nom":"ANTONI"
+             }
+          ],
+          "idioma":[
+             "CAT"
+          ],
+          "grup":"12"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-04-15T09:00:00.000Z",
+          "endTime":"2021-04-15T12:00:00.000Z",
+          "aules":[
+             "ONLINE ."
+          ],
+          "tipusActivitat":"EP",
+          "professors":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-04-19T06:00:00.000Z",
+          "endTime":"2021-04-19T09:00:00.000Z",
+          "aules":[
+             "TR5 0.2",
+             "TR6 AUDIT. 1"
+          ],
+          "tipusActivitat":"EP",
+          "professors":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-04-21T06:00:00.000Z",
+          "endTime":"2021-04-21T09:00:00.000Z",
+          "aules":[
+             "ONLINE ."
+          ],
+          "tipusActivitat":"EP",
+          "professors":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"FÍSICA II",
+          "nomEsp":"FÍSICA II",
+          "nomEng":"PHYSICS II",
+          "sigles":"F2",
+          "cod":"220009",
+          "id":"220009",
+          "startTime":"2021-06-09T15:00:00.000Z",
+          "endTime":"2021-06-09T19:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 1",
+             "TR5 2.2"
+          ],
+          "tipusActivitat":"EF",
+          "professors":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"QUÍMICA",
+          "nomEsp":"QUÍMICA",
+          "nomEng":"CHEMISTRY",
+          "sigles":"Q",
+          "cod":"220006",
+          "id":"220006",
+          "startTime":"2021-06-11T09:00:00.000Z",
+          "endTime":"2021-06-11T12:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 2",
+             "TR5 2.3"
+          ],
+          "tipusActivitat":"EF",
+          "professors":[
+             
+          ],
+          "grup":"1"
+       },
+       {
+          "nomCat":"CÀLCUL II",
+          "nomEsp":"CÁLCULO II",
+          "nomEng":"CALCULUS II",
+          "sigles":"C2",
+          "cod":"220007",
+          "id":"220007",
+          "startTime":"2021-06-17T08:00:00.000Z",
+          "endTime":"2021-06-17T12:00:00.000Z",
+          "aules":[
+             "TR6 AUDIT. 2",
+             "TR5 3.3"
+          ],
+          "tipusActivitat":"EF",
+          "professors":[
+             
+          ],
+          "grup":"1"
+       }
+    ]
+ }

@@ -1,0 +1,403 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.error-modal .modal-wrapper {
+  --width: 80%;
+  --height: 80%;
+  padding: 10%;
+}
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-BoldItalic.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-Bold.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-Italic.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-Regular.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-BoldItalic.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-Light.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-LightItalic.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-Medium.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-MediumItalic.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-ThinItalic.ttf');
+// }
+
+// @font-face {
+//   font-family: 'Roboto', sans-serif;
+//   src: url('assets/font/Roboto-Thin.ttf');
+// }
+
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-ThinItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto, sans-serif';
+  src: url('assets/font/Roboto-MediumItalic.ttf');
+}
+
+
+@font-face {
+  font-family: 'Roboto Condensed, sans-serif';
+  src: url('assets/font/RobotoCondensed-Regular.ttf');
+}
+
+.c {
+  fill: #fff;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: 400;
+  }
+
+.white {
+  color: var(--ion-color-white);
+}
+
+.black {
+  color: var(--ion-color-black);
+}
+
+.blue {
+  color: var(--ion-color-primary);  
+}
+
+.gray-disabled {
+  color: var(--ion-color-gray);  
+}
+
+.red {
+  color: var(--ion-color-rojo);  
+}
+
+.title-g{
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: bold;
+}
+
+.subtitle-g{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: bold;
+}
+
+.primary-text-g{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: normal;
+}
+
+.primary-text-s{
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: normal;
+}
+
+.secondary-text{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: normal;
+}
+
+.link-g{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: normal;
+}
+
+.title-m{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: bold;
+}
+
+.subtitle-m{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: bold;
+}
+
+.primary-text-m{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: normal;
+}
+
+.link-m{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: normal;
+}
+
+.see-all{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: bold;
+}
+
+.tabs{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;   
+  font-weight: bold;
+  letter-spacing: 0.98px;
+}
+
+//   LOADER AFTER WORD //
+.custom-loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: "\2026";
+  /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+// SPLIT LINE
+.my-split-line {
+  background-color: #efefef;
+  margin-top: 12px;
+  // width: 85%;
+}
+
+//REFRESHER
+ion-refresher-content {
+  background-color: var(--ion-color-background-card) !important;
+
+  .refresher-pulling {
+    position: fixed;
+    top: 50px;
+  }
+}
+
+.my-refresher {
+  height: 0px !important;
+}
+
+//
+// PARA EL SKELETON
+// *CARDS IMAGE TOP*
+.skeleton-content-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-skeleton {
+  width: 45%;
+  margin: 2%;
+}
+
+.card-skeleton-img {
+  height: 100px;
+  // max-height: 40%;
+}
+
+
+.card-info-skeleton {
+  padding: var(--ion-padding-custom-card);
+}
+
+// *LIST EVENTS*
+
+
+.table-bordered {
+  border: 0px !important;
+
+  th {
+    border: 0px !important;
+  }
+
+  td {
+    border: 0px !important;
+  }
+}
+
+.button-month-name {
+  font-size: 20px !important;
+  height: 40px;
+}
+
+.monthview-current {
+  background-color: transparent !important;
+  color: var(--ion-color-primary) !important;
+}
+
+.table>tbody>tr>td {
+  padding: 10px !important;
+  line-height: 20px !important;
+}
+
+.section-content td {
+  border-top: 1px solid #b2b2b2 !important;
+}
+
+// Slider home bullets
+.swiper-pagination-bullets { 
+  bottom: 30px !important;
+}
+
+// Icons Menú (Configuration, SideBar Menú)
+.div-icon-menu {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-menu {
+  font-size: 125%!important;
+  // color: #a5a5a5!important;
+}
+
+ion-tab-button {        
+  font-size: 95%;
+}
+
+
+
+.popover-content{ //fa que les opcions del popover (selecció d'hores de consulta) es mostrin senceres
+  width: auto !important; 
+}
+
+ion-back-button{
+  --color: white !important;
+}
+
+
+
+.responseAlert{
+  .alert-message {
+      font-size: 16px !important;
+  }
+}
+
+
+//background side menu
+
+ion-split-pane{ 
+  --border: none !important;
+  ion-menu{
+   --background: var(--ion-color-primary-contrast) !important; 
+      ion-content{            
+          --background: var(--ion-color-primary-contrast) !important; 
+          ion-list-header{ 
+              --background: var(--ion-color-primary-contrast) !important;   
+          }
+          ion-item{
+              --background: var(--ion-color-primary-contrast) !important;
+          }
+      }
+  }
+}

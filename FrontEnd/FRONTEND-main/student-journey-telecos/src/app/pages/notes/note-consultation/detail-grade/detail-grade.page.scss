@@ -1,0 +1,148 @@
+.cabecera {
+    padding: 15px;
+
+    background-color: var(--ion-color-white);
+
+    .titulo-actividad{
+        margin: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .info-actividad{
+        text-align: center;
+    }
+
+    .grupo-info{
+        margin-left: 15px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        .arrow {
+            font-size: 30px;
+            color: #D6D6D6;
+        }
+    }
+
+    .teacher {
+        margin-top: 8px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.nombreCategoria{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5%;
+}
+
+.nombreCategoria span:first-child{
+    width: 65%;
+}
+
+.notaFinal {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;font-weight: bold;
+    background-color: #E5F2F9;
+}
+
+.nombreSubcategoria{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 87%;
+    margin-left: 8%;
+    font-size: 16px;
+}
+
+.nombreSubcategoria span:first-child{
+    width: 55%;;
+}
+
+.tabla-actividades{
+    width: 84%;
+    margin: 8%;
+    text-align: center;
+    background-color: var(--ion-color-white);
+}
+
+.tabla-actividades tr th:first-child{
+    text-align: left;
+}
+
+.tabla-actividades tr td:first-child{
+    text-align: left;
+}
+
+.tabla-actividades th{
+    padding: 12px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    
+}
+
+.tabla-actividades td{
+    padding: 5px;
+}
+
+.tabla-actividades tr{
+    border-bottom-color: #EFEFEF;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+.tabla-actividades tr:last-child,tr:first-child{
+    border-bottom-style: none;
+}
+
+.tabla-actividades tr td:first-child{
+    width: 60%;
+    padding-left: 12px;
+    padding-bottom: 12px;
+}
+
+.tabla-actividades tr td:nth-child(2){
+    width: 15%;
+}
+
+.tabla-actividades tr td:last-child{
+    font-weight: bold;
+}
+
+.noCategorias{
+    background-color: white;
+    padding-top: 25%;
+    height: 100%;
+    width: 100%;
+
+    img {
+        display: block;
+        margin: auto;
+        width: 50%;
+        margin-right: 26%;
+    }
+
+    .div-text{
+        text-align: center;
+        margin-left: 10%;
+        width: 80%;
+    
+        .text{
+            font-weight: 500;
+            font-size: 22px;
+            color: var(--ion-color-primary);
+        }
+    }
+}

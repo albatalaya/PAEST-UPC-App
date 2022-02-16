@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button mode="md" text="" [defaultHref]="'/pages/' + backPage"></ion-back-button>
+      </ion-buttons>
+    <ion-title>{{'ANNOUNCEMENTS.TITLE_DETAIL' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="announcementObject">
+      <div class="ion-padding">
+        <div *ngIf="announcementObject?.title" class="title-g black">
+          {{announcementObject?.title[translateService.currentLang]}}
+        </div>
+        <div *ngIf="announcementObject?.description" class="description-announcement">
+          <p>
+            {{announcementObject?.description[translateService.currentLang]}}
+          </p>
+        </div>
+        <div *ngIf="announcementObject?.content?.detail" class="detail-announcement">
+          <p>
+            {{announcementObject?.content.detail[translateService.currentLang]}}
+          </p>
+        </div>
+        <div *ngIf="announcementObject?.content?.link" class="remoteUrl" (click)="goToExternalLink()">
+          <p><b>{{'NEWS.EXTERNAL_LINK' | translate}}</b></p>
+          <span class="external-link">{{announcementObject?.content.link}}</span>
+        </div>
+        <div *ngIf="announcementObject?.createdAt">
+          <p class="literal-text subtitle-g black"><b>{{'ANNOUNCEMENTS.DATE' | translate}}</b></p>
+          <span class="primary-text-g black">{{announcementObject?.createdAt | date:'longDate' : '' : translateService.currentLang }}</span>
+        </div>
+        <div *ngIf="announcementObject?.content?.sender" class="literal-text subtitle-g black">
+          <p><b>{{'ANNOUNCEMENTS.SCHOOL' | translate}}</b></p>
+          <span class="external-link">{{announcementObject?.content.sender}}</span>
+        </div>
+        <!--<div class="img-content-news">
+          <img *ngIf="announcementObject?.content.image != null" [src]="announcementObject?.content.image" alt="">
+          <img *ngIf="announcementObject?.content.image === null || !announcementObject?.content.image" src="../../../assets/images/noticia-sinimg.jpg" alt="">
+        </div>-->
+
+        <!--<ion-button class="descarga" shape="round" expand="block" color="primary"  mode="ios">{{'ANNOUNCEMENTS.DOWNLOAD' | translate}}</ion-button>-->
+
+      </div>
+    </div>
+
+  <div *ngIf="!announcementObject">
+    <div class="ion-padding">
+      <div class="title">
+        <ion-skeleton-text animated style="height: 50px;"></ion-skeleton-text>
+      </div>
+
+      <div class="description">
+        <ion-skeleton-text animated style="height: 150px;"></ion-skeleton-text>
+      </div>
+
+      <ion-skeleton-text animated></ion-skeleton-text>
+      <ion-skeleton-text animated></ion-skeleton-text>
+      <ion-skeleton-text animated></ion-skeleton-text>
+      <ion-skeleton-text animated></ion-skeleton-text>
+      
+      <!--<div class="img-content-news">
+        <ion-skeleton-text animated style="height: 300px;"></ion-skeleton-text>
+      </div>-->
+    </div>
+  </div>
+</ion-content>

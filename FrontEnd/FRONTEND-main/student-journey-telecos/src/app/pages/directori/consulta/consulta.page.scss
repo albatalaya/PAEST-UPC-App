@@ -1,0 +1,34 @@
+  #nom{
+    background-color: #fff;
+    margin-top:0;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 15px 15px;
+  }
+  
+  #info{
+    background-color: #fff;
+    padding: 1px 15px 1px;
+
+    #x{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+  }
+
+  .horaris{
+    --background: var(--ion-color-white);
+  }
+
+#seleccio{  //afegit per expandir la selecció
+  padding: 15px 0px 15px;
+  --background: var(--ion-color-white);
+  #dia{ 
+    min-width: 70% !important; //a global.scss afegit per modificar la width de les opcions
+  }
+  #hora{
+    margin-left: auto; // es mostra a la dreta
+  }
+}

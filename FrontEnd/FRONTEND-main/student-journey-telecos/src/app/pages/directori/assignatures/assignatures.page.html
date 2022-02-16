@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>El teu professorat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fondo">
+    <div *ngIf="matricula" class="accordion">
+      <div class="accordion-content">
+        <ion-label class="label-title-category title-m black">
+          {{matricula.nomCat}}
+        </ion-label>
+      </div>
+      <div>
+        <app-directori-subjects-list [matricula]="matricula"></app-directori-subjects-list>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+
+
+
+<!--
+<h2 id="carrera"  *ngIf="matricula"><b>{{matricula.nomCat}}</b></h2>
+  
+<ion-content class="ion-padding"  *ngIf="matricula">
+  <h2 id= "quatri"><b>{{matricula.subjects[0].curs}}-{{matricula.subjects[0].semester}}</b></h2>
+  <div id="assignatures" style="font-size: 0">
+      <ul *ngFor= "let assignatura of matricula.subjects">
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <h2><b>{{assignatura.nomCat}}</b></h2>
+          <div id= "prof"  *ngFor= "let professor of assignatura.professors"><p [routerLink]="['/professorat/'+assignatura.codiUPC+'/'+professor.id_prof]"><u>{{professor.nom}} {{professor.cognoms}}</u></p></div>
+        </li>
+      </ul>
+
+  </div>
+ 
+</ion-content>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h2><b>Anàlisi i Avaluació de Xarxes</b></h2>
+            <div id= "prof">
+              <p routerLink="/professorat/1"><u>ESTEVE PALLARES SEGARRA</u></p>
+            </div>
+          </li>
+
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h2><b>Gestió d'Internet</b></h2>
+            <div id= "prof">
+              <p routerLink="/professorat/1"><u>ANTONIO BARBA MARTI</u></p>
+            </div>
+          </li>
+
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h2><b>Sistemes de Suport a les Comunicacions Mòbils</b></h2>
+            <div id= "prof">
+              <p routerLink="/professorat/1"><u>JOSEP PARADELLS ASPAS</u></p>
+              <p routerLink="/professorat/1"><u>ANA M. CALVERAS AUGE</u></p>
+            </div>
+          </li>
+
+          <li>
+            <input type="checkbox" checked>
+            <i></i>
+            <h2><b>Projecte Avançat d'Enginyeria de Sistemes Telemàtics</b></h2>
+            <div id= "prof">
+              <p routerLink="/professorat/1"><u>RAMON BRAGOS BARDIA</u></p>
+              <p routerLink="/professorat/1"><u>JOAN SARDA FERRER</u></p>
+              <p routerLink="/professorat/1"><u>EVA MARIA VIDAL LOPEZ</u></p>
+              <p routerLink="/professorat/1"><u>JOSEP RAFAEL PEGUEROLES VALLES</u></p>
+              <p routerLink="/professorat/1"><u>ANA M. CALVERAS AUGE</u></p>
+            </div>
+          </li> 
+        -->
+

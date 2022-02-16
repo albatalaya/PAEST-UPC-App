@@ -1,0 +1,249 @@
+{
+  "COMPONENTS": {
+    "SIDEBAR": {
+      "LOGIN": "Accedeix-hi",
+      "LOGOUT": "Sortir",
+      "ITEM1": "Home",
+      "ITEM2": "Guia docent",
+      "ITEM3": "Suport a la matriculació",
+      "ITEM4": "Beques i ajuts",
+      "ITEM5": "Biblioteques",
+      "ITEM6": "Mapes",
+      "ITEM7": "Notícies",
+      "ITEM8": "Agenda",
+      "ITEM9": "Com és la UPC?",
+      "CONFIG": "Configuració",
+      "PERSONAL": "El teu espai",
+      "STUDENT_SUPPORT": "Suport a l'estudiantat",
+      "INSTITUTONIAL": "La UPC al dia"
+    }
+  },
+  "HOME": {
+    "PUBLIC": {
+      "TAB1": {
+        "TITLE": "NOTÍCIES"
+      },
+      "TAB2": {
+        "TITLE": "AGENDA"
+      },
+      "SLIDER": {
+        "ITEM1": "Biblioteques",
+        "ITEM2": "Mapes",
+        "ITEM3": "Beques"
+      }
+    },
+    "NAME_APP": "UPC Estudiants"
+  },
+  "NEWS": {
+    "TITLE": "Notícies",
+    "EXTERNAL_LINK": "Enllaç extern"
+  },
+  "EVENTS": {
+    "TITLE": "Esdeveniment",
+    "VIEW_ALL": "VEURE-HO TOT",
+    "TODAY": "Avui",
+    "EVENT_DETAIL": {
+      "WHEN": "Quan",
+      "ORGANIZED": "Organitza",
+      "LOCATION": "Lloc",
+      "WHERE": "On",
+      "WEB": "Web",
+      "EXTERNAL_LINK": "Enllaç extern",
+      "ADD_TO_CALENDAR": "Afegeix al calendari",
+      "TO": "a",
+      "FROM": "de",
+      "FROM_UPPER": "De"
+    },
+    "CALENDAR": {
+      "TITLE": "Agenda"
+    },
+    "NO_EVENTS": "No hi ha esdeveniments per a aquesta data."
+  },
+  "LIBRARIES": {
+    "TITLE": "Biblioteques",
+    "SEARCH": "Cerca...",
+    "OPENED": "Obert",
+    "OPEN_AT": "Obre a les ",
+    "CLOSED": "Tancada",
+    "UNTIL": "Fins a",
+    "BOOK_ROOM": "Reserva un espai d'estudi",
+    "CONTACT": "Dades de contacte",
+    "ADDRESS": "Adreça",
+    "MAIL": "Adreça electrònica",
+    "PHONE": "Telèfon",
+    "WEB": "Web",
+    "STUDENT_LIBRARY": "Serveis no presencials per a estudiants",
+    "FAQ_LIBRARY": "FAQS sobre serveis durant COVID-19",
+    "INTERNATIONAL": "Estudiant internacional",
+    "DOCTORAND": "Biblioteca del doctorand",
+    "DISTANCE": "distància"
+  },
+  "SCHOOLS": {
+    "TITLE": "Mapes"
+  },
+  "WORK_IN_PROGRESS": {
+    "TITLE": "Properament"
+  },
+  "CONFIGURATION": {
+    "TITLE": "Configuració",
+    "LANGUAGES": {
+      "TITLE": "Idioma",
+      "LANG_ca": "CATALÀ",
+      "LANG_es": "ESPAÑOL",
+      "LANG_en": "ENGLISH"
+    },
+    "SUBTITLES": {
+      "HOME": "Personalitza la pantalla d'inici",
+      "GENERAL": "General"
+    },
+    "LIST_CONFIG": {
+      "EVENTS": {
+        "TITLE": "Agenda",
+        "EXPLANATION": "Es mostrarà a la pantalla principal"
+      }
+    },
+    "COPYRIGHT": "© 2020 Tots els drets reservats",
+    "VERSION": "Versió"
+  },
+  "SCHOLARSHIPS": {
+    "TITLE": "Beques i ajuts",
+    "TAB1": "Estudis",
+    "TAB2": "Mobilitat",
+    "SEARCH": "Cerca...",
+    "UNTIL": "Fins a",
+    "FROM": "Des de",
+    "FROM_THE": "A partir del",
+    "UNDEFINED": "Convocatòria sense data",
+    "OPEN_SOON": "Properament",
+    "OPENED": "Convocatòria oberta",
+    "CLOSED": "Convocatòria tancada",
+    "DETAIL": {
+      "TITLE": "Ajuts per a estudis",
+      "GENERAL_INFORMATION": "Informació general",
+      "REQUIREMENTS": "Requisits",
+      "SCHOLARSHIP": "Beca",
+      "SUBMISSION": "Sol·licitud",
+      "AWARD": "Adjudicació",
+      "MORE_INFORMATION": "Més informació"
+    },
+    "SUPPORT": "Suport"
+  },
+  "SCHEDULE_MANAGMENT": {
+    "TITLE": "Gestió d'horaris",
+    "NO_EVENTS": "No hi ha esdeveniments per a aquesta data.",
+    "GROUP": "Grup",
+    "TEACHER": "Professor/a",
+    "DATE_TIME": "Data i hora",
+    "LANGUAGE": "Idioma",
+    "TYPE": "Tipus",
+    "CLASSROOM": "Aula",
+    "CAMPUS": "Campus i edifici",
+    "OBSERVATIONS": "Observacions",
+    "TYPE_ACTIVITY_T": "Teoria",
+    "TYPE_ACTIVITY_L": "Laboratori",
+    "TYPE_ACTIVITY_P": "Problemes",
+    "TYPE_ACTIVITY_EP": "Examen",
+    "TYPE_ACTIVITY_EF": "Examen",
+    "TYPE_ACTIVITY_LONG_EP": "Examen Parcial",
+    "TYPE_ACTIVITY_LONG_EF": "Examen Final",
+    "DATA_UPDATED": "Dades actualitzades el",
+    "AT": "a les",
+    "TODAY": "Avui"
+  },
+  "NOTE_CONSULTATION": {
+    "TITLE": "Consulta de notes",
+    "NOTE_DETAIL": "Detall de la nota",
+    "NOTE_DEF": "Nota Def.",
+    "NOTE_PROF": "Nota Prof.",
+    "ACTIVITY": "Activitat",
+    "MANDATORY": "Obligatòries",
+    "OPTIONAL": "Optatives",
+    "CALL": "Convocatòria",
+    "COURSE": "Quadrimestre",
+    "CREDITS": "Crèdits",
+    "ABBREVIATIONS": "Sigles",
+    "CODE": "Codi",
+    "SEE_ALL": "Veure’ls tots",
+    "NO_RESUTS_SEARCH_MANDATORY": "No s’han trobat assignatures obligatòries amb aquest nom.",
+    "NO_RESUTS_SEARCH_OPTIONAL": "No s’han trobat assignatures optatives amb aquest nom.",
+    "TEACHER_NOTE": "Nota del/de la professor/a",
+    "NO_NOTES": "Aquesta assignatura <b>no té activitat</b> en la consulta de notes.",
+    "NO_FILE": "No tens cap expedient obert disponible",
+    "TEXT_NOTE_S": "Suspens",
+    "TEXT_NOTE_A": "Aprovat",
+    "TEXT_NOTE_N": "Notable",
+    "TEXT_NOTE_E": "Excel·lent",
+    "TEXT_NOTE_MH": "Matrícula d’honor",
+    "TEXT_NOTE_NP": "No resentat",
+    "TEXT_NOTE_C": "Convalidat"
+  },
+  "STUDENT_CARD": {
+    "TITLE": "Carnet UPC",
+    "TITLE_DETAIL": "Carnet UPC",
+    "EXPIRES": "Caducitat",
+    "CODE": "Codi PAN",
+    "AT": "a les",
+    "DATA_UPDATED": "Dades actualitzades el"
+  },
+  "ANNOUNCEMENTS": {
+    "TITLE": "Els teus avisos",
+    "TITLE_DETAIL": "Avís",
+    "NEW_ANNOUNCEMENT": "ELS TEUS AVISOS",
+    "SEE_ALL": "Veure’ls tots",
+    "SINCE_HOURS": "Fa {{hours}} hores",
+    "SINCE_DAYS": "Fa {{days}} dies",
+    "YESTERDAY": "Ahir",
+    "MORE_INFO": "Més informació",
+    "SCHEDULE_DATE": "Canvi d'horari - <b>{{name}}</b><br />La classe del dia {{oldDate}} ha passat al dia {{newDate}}.",
+    "SCHEDULE_ROOM": "Canvi d'aula - <b>{{name}}</b><br />La classe del dia {{date}} ha passat a l'aula {{room}}.",
+    "SCHEDULE_CANCELLATION": "S'ha cancel·lat la classe de <b>{{name}}</b> del dia {{day}} de {{from}} a {{to}}.",
+    "GRADE_FINAL": "S'ha publicat la nota de l'activitat {{activity}} de l'assignatura {{subject}}.",
+    "DATE": "Data",
+    "SCHOOL": "Escola",
+    "DOWNLOAD": "DESCARREGA PDF",
+    "NOW": "Ara",
+    "NO_ANNOUNCEMENT": "No hi ha nous avisos"
+  },
+  "ERRORS": {
+    "INTERNET": "Sembla que hi ha algun problema amb la teva <b>connexió a internet</b>.",
+    "NOT_FOUND": "<b>Ens sap greu,</b> no trobem el que buscaves.",
+    "INTERNAL_SERVER_ERROR": "Sembla que hi ha algun problema amb <b>el servidor</b>.</br>Torna-ho a intentar més tard.",
+    "NO_RESULTS": "Ho sentim, no trobem el que buscaves",
+    "GENERIC": "Ui! Alguna cosa ha sortit malament",
+    "SERVER": "Sembla que hi ha algun problema amb el servei",
+    "MODAL_CLOSE": "Tornar",
+    "SCHEDULE": "Aquesta app està en evolució. Es preveu que la funcionalitat de consulta d’horaris s’incorpori properament.",
+    "NOT_GRADES": "Ho sentim. Aquesta assignatura no té activada la consulta de notes.",
+    "NOT_SUBJECT": "Ho sentim. No hem trobat notes d'aquesta assignatura.",
+    "PERMISSION_DENIED": "Ho sentim. Necessitem el teu permís per accedir al serveis corporatius de la universitat",
+    "WIP": "Aquesta funcionalitat estarà disponible proximament",
+    "USER_NOT_FOUND": "Usuari no trobat / Token invalid o expirat",
+    "SITE": "Sembla que hi ha algun problema amb el lloc. Torna-ho a provar-ho més tard",
+    "SCHEDULE_NOT_ENROLLMENT": "No està disponible el teu horari",
+    "NO_SCHEDULE": "No hi ha horaris a mostrar.",
+    "NO_EVENTS": "No hi ha horaris a mostrar.",
+    "RESTRICTED": "L'accés a aquesta apartat està restringit a estudiants de grau i màster",
+    "GRADES_NOT_ENROLLMENT": "No tens assignatures matriculades",
+    "INCORRECT_CEDENTIALS": "ERROR: Credencials incorrectes o contrasenya caducada.",
+    "UNDER_MAINTENANCE": "L'aplicació està <b>en manteniment</b>. Esperem que torni a funcionar en breus. Torna-ho a provar-ho més tard."
+  },
+  "LOG_IN": {
+    "TITLE": "UPC App",
+    "USER": "Usuari",
+    "PASSWORD": "Contrasenya",
+    "RESET_PASS": "Canvi i oblit de contrasenya",
+    "ENTER": "Entra",
+    "UPC": "© <b>UPC</b> Universitat Politècnica de Catalunya · BarcelonaTech"
+  },
+  "ALERT_UPDATE": {
+    "HEADER": "Nova Versió",
+    "MESSAGES": {
+      "CRITICAL": "Versió {{version}} esta disponible a la botiga. Actualitza l'aplicació per a poder seguir utilitzant-la.",
+      "ANNOYING": "La versió <strong>{{version}}</strong> està disponible a la botiga. \nEt recomanem que actualitzis a la última versió."
+    },
+    "BUTTONS": {
+      "UPDATE": "Actualitzar",
+      "NOT_NOW": "Ara no"
+    }
+  }
+}

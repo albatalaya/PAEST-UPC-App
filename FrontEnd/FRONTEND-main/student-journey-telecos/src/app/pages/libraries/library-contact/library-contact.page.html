@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button mode="md" text=""></ion-back-button>
+      </ion-buttons>
+      <ion-title>{{ 'LIBRARIES.CONTACT' | translate }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content class="ion-padding">
+  <div class="contact">
+    <p class="subtitle-g black">{{ 'LIBRARIES.MAIL' | translate }}</p>
+    <a class="link-g blue" href="mailto:{{library?.data.mail}}">
+      {{ library?.data.mail }}
+    </a>
+    <hr class="my-split-line">
+    <div>
+      <p class="subtitle-g black">{{ 'LIBRARIES.PHONE' | translate }}</p>
+      <a class="link-g blue" href="tel:{{library?.data.phone}}">
+        {{ library?.data.phone }}
+      </a>
+      <hr class="my-split-line">
+    </div>
+    <div>
+      <p class="subtitle-g black">{{ 'LIBRARIES.ADDRESS' | translate }}</p>
+      <p class="primary-text-g black">{{ library?.data.address }}</p>
+    </div>
+  </div>
+  <br />
+  <!--<div #mapElement class="map" (click)="openMarker()"></div>-->
+  <!--<div *ngIf="urlMaps">
+    <iframe [src]="urlMaps" width="100%" height="350"></iframe>
+  </div>-->
+  <div (click)="openMarker()">
+    <img src="{{'https://maps.googleapis.com/maps/api/staticmap?center=' + library?.data.latitude + ',' + library?.data.longitude + '&markers=color:red%7C' + library?.data.latitude + ',' + library?.data.longitude + '&zoom=14&size=400x400&key=AIzaSyDo8U9c1pzrnW5dGmPN4dgj44kIxm96tDU'}}" width="100%" height="350"/>
+  </div>
+</ion-content>

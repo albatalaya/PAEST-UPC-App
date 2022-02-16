@@ -1,0 +1,252 @@
+{
+  "COMPONENTS": {
+    "SIDEBAR": {
+      "LOGIN": "Acceder",
+      "LOGOUT": "Salir",
+      "ITEM1": "Home",
+      "ITEM2": "Guía docente",
+      "ITEM3": "Apoyo a la matriculación",
+      "ITEM4": "Becas y ayudas",
+      "ITEM5": "Bibliotecas",
+      "ITEM6": "Mapas",
+      "ITEM7": "Noticias",
+      "ITEM8": "Agenda",
+      "ITEM9": "¿Cómo es la UPC?",
+      "CONFIG": "Configuración",
+      "PERSONAL": "Tu espacio",
+      "STUDENT_SUPPORT": "Soporte al estudiantado",
+      "INSTITUTONIAL": "La UPC al día"
+    }
+  },
+  "HOME": {
+    "PUBLIC": {
+      "TAB1": {
+        "TITLE": "NOTICIAS"
+      },
+      "TAB2": {
+        "TITLE": "AGENDA"
+      },
+      "SLIDER": {
+        "ITEM1": "Bibliotecas",
+        "ITEM2": "Mapas",
+        "ITEM3": "Becas"
+      }
+    },
+    "NAME_APP": "UPC Estudiantes"
+  },
+  "NEWS": {
+    "TITLE": "Noticias",
+    "EXTERNAL_LINK": "Enlace externo",
+    "LANGUAGE_ALERT": "Las noticias se muestran en el idioma original."
+  },
+  "EVENTS": {
+    "TITLE": "Eventos",
+    "VIEW_ALL": "VER TODO",
+    "TODAY": "Hoy",
+    "LANGUAGE_ALERT": "Los eventos se muestran en el idioma original.",
+    "EVENT_DETAIL": {
+      "WHEN": "Cuándo",
+      "ORGANIZED": "Organiza",
+      "LOCATION": "Localidad",
+      "WHERE": "Dónde",
+      "WEB": "Web",
+      "EXTERNAL_LINK": "Enlace externo",
+      "ADD_TO_CALENDAR": "Añade a tu calendario",
+      "TO": "a",
+      "FROM": "de",
+      "FROM_UPPER": "De"
+    },
+    "CALENDAR": {
+      "TITLE": "Agenda"
+    },
+    "NO_EVENTS": "No hay eventos para esta fecha."
+  },
+  "LIBRARIES": {
+    "TITLE": "Bibliotecas",
+    "SEARCH": "Busca...",
+    "OPENED": "Abierto",
+    "OPEN_AT": "Abre a las ",
+    "CLOSED": "Cerrada",
+    "UNTIL": "Hasta",
+    "BOOK_ROOM": "Reserva un espacio de estudio",
+    "CONTACT": "Datos de contacto",
+    "ADDRESS": "Dirección",
+    "MAIL": "Correo electrónico",
+    "PHONE": "Teléfono",
+    "WEB": "Web",
+    "STUDENT_LIBRARY": "Servicios no presenciales para estudiantes",
+    "FAQ_LIBRARY": "FAQS sobre servicios durante COVID-19",
+    "INTERNATIONAL": "Estudiante internacional",
+    "DOCTORAND": "Biblioteca del doctorando",
+    "DISTANCE": "distancia"
+  },
+  "SCHOOLS": {
+    "TITLE": "Mapas"
+  },
+  "WORK_IN_PROGRESS": {
+    "TITLE": "Próximamente"
+  },
+  "CONFIGURATION": {
+    "TITLE": "Configuración",
+    "LANGUAGES": {
+      "TITLE": "Idioma",
+      "LANG_ca": "CATALÀ",
+      "LANG_es": "ESPAÑOL",
+      "LANG_en": "ENGLISH"
+    },
+    "SUBTITLES": {
+      "HOME": "Personaliza la pantalla de inicio",
+      "GENERAL": "General"
+    },
+    "LIST_CONFIG": {
+      "EVENTS": {
+        "TITLE": "Agenda",
+        "EXPLANATION": "Se mostrará en la pantalla principal"
+      }
+    },
+    "COPYRIGHT": "© 2020 Todos los derechos reservados",
+    "VERSION": "Versión"
+  },
+  "SCHOLARSHIPS": {
+    "TITLE": "Becas y ayudas",
+    "TAB1": "Estudios",
+    "TAB2": "Movilidad",
+    "SEARCH": "Busca...",
+    "UNTIL": "Hasta",
+    "FROM": "Desde",
+    "FROM_THE": "A partir del",
+    "UNDEFINED": "Convocatoria no establecida",
+    "OPEN_SOON": "Próximamente",
+    "OPENED": "Convocatoria abierta",
+    "CLOSED": "Convocatoria cerrada",
+    "DETAIL": {
+      "TITLE": "Ayuda para estudios",
+      "GENERAL_INFORMATION": "Información general",
+      "REQUIREMENTS": "Requisitos",
+      "SCHOLARSHIP": "Beca",
+      "SUBMISSION": "Solicitud",
+      "AWARD": "Adjudicación",
+      "MORE_INFORMATION": "Más información"
+    },
+    "SUPPORT": "Apoyo",
+    "LANGUAGE_ALERT": "Las becas se muestran en el idioma original."
+  },
+  "SCHEDULE_MANAGMENT": {
+    "TITLE": "Gestión de horarios",
+    "NO_EVENTS": "No hay eventos para esta fecha.",
+    "GROUP": "Grupo",
+    "TEACHER": "Profesor/a",
+    "DATE_TIME": "Fecha y hora",
+    "LANGUAGE": "Idioma",
+    "TYPE": "Tipus",
+    "CLASSROOM": "Aula",
+    "CAMPUS": "Campus y edificio",
+    "OBSERVATIONS": "Observaciones",
+    "TYPE_ACTIVITY_T": "Teoría",
+    "TYPE_ACTIVITY_L": "Laboratorio",
+    "TYPE_ACTIVITY_P": "Problemas",
+    "TYPE_ACTIVITY_EP": "Examen",
+    "TYPE_ACTIVITY_EF": "Examen",
+    "TYPE_ACTIVITY_LONG_EP": "Examen Parcial",
+    "TYPE_ACTIVITY_LONG_EF": "Examen Final",
+    "DATA_UPDATED": "Datos actualizados el",
+    "AT": "a las",
+    "TODAY": "Hoy"
+  },
+  "NOTE_CONSULTATION": {
+    "TITLE": "Consulta de notas",
+    "NOTE_DETAIL": "Detalle de la nota",
+    "NOTE_DEF": "Nota Def.",
+    "NOTE_PROF": "Nota Prof.",
+    "ACTIVITY": "Actividad",
+    "MANDATORY": "Obligatorias",
+    "OPTIONAL": "Optativas",
+    "CALL": "Convocatoria",
+    "COURSE": "Cuatrimestre",
+    "CREDITS": "Créditos",
+    "ABBREVIATIONS": "Siglas",
+    "CODE": "Código",
+    "SEE_ALL": "Ver todos",
+    "NO_RESUTS_SEARCH_MANDATORY": "No se encontraron asignaturas obligatorias con este nombre.",
+    "NO_RESUTS_SEARCH_OPTIONAL": "No se encontraron asignaturas optativas con este nombre.",
+    "TEACHER_NOTE": "Nota del/de la profesor/a",
+    "NO_NOTES": "Esta asignatura <b>no tiene actividad</b> en la consulta de notas.",
+    "NO_FILE": "No tienes ningún expediente abierto disponible",
+    "TEXT_NOTE_S": "Suspendido",
+    "TEXT_NOTE_A": "Aprobado",
+    "TEXT_NOTE_N": "Notable",
+    "TEXT_NOTE_E": "Excelente",
+    "TEXT_NOTE_MH": "Matrícula de honor",
+    "TEXT_NOTE_NP": "No presentado",
+    "TEXT_NOTE_C": "convalidado"
+  },
+  "STUDENT_CARD": {
+    "TITLE": "Carnet UPC",
+    "TITLE_DETAIL": "Carnet UPC",
+    "EXPIRES": "Caduca",
+    "CODE": "Codigo PAN",
+    "AT": "a las",
+    "DATA_UPDATED": "Datos actualizados el"
+  },
+  "ANNOUNCEMENTS": {
+    "TITLE": "Tus avisos",
+    "TITLE_DETAIL": "Aviso",
+    "NEW_ANNOUNCEMENT": "TUS AVISOS",
+    "SEE_ALL": "Ver todos",
+    "SINCE_HOURS": "Hace {{hours}} horas",
+    "SINCE_DAYS": "Hace {{days}} días",
+    "YESTERDAY": "Ayer",
+    "MORE_INFO": "Más información",
+    "SCHEDULE_DATE": "Cambio de horario - <b>{{name}}</b><br />La clase del día {{oldDate}} ha pasado al día {{newDate}}.",
+    "SCHEDULE_ROOM": "Cambio de aula - <b>{{name}}</b><br />La clase del día {{date}} ha pasado al aula {{room}}.",
+    "SCHEDULE_CANCELLATION": "Se ha cancelado la clase de <b>{{name}}</b> del día {{day}} de {{from}} a {{to}}.",
+    "GRADE_FINAL": "Se ha publicado la nota de la actividad {{activity}} de la asignatura {{subject}}.",
+    "DATE": "Fecha",
+    "SCHOOL": "Escuela",
+    "DOWNLOAD": "DESCARGAR PDF",
+    "NOW": "Ahora",
+    "NO_ANNOUNCEMENT": "No hay nuevos avisos"
+  },
+  "ERRORS": {
+    "INTERNET": "Parece que hay algún problema con tu <b>conexión a internet</b>.",
+    "NOT_FOUND": "<b>Lo sentimos,</b> no encontramos lo que buscabas.",
+    "INTERNAL_SERVER_ERROR": "Parece que hay algún problema con <b>el servidor</b>.</br>Vuelve a intentarlo más tarde.",
+    "NO_RESULTS": "Lo sentimos, no encontramos lo que buscabas",
+    "GENERIC": "Uy! Algo ha salido mal",
+    "SERVER": "Parece que hay algún problema con el servicio.",
+    "SCHEDULE": "Esta app está en evolución. Se prevé que la funcionalidad de consulta de horarios se incorpore próximamente.",
+    "MODAL_CLOSE": "Volver",
+    "NOT_GRADES": "Lo sentimos. Esta asignatura no tiene activada la consulta de notas.",
+    "NOT_SUBJECT": "Lo sentimos. No hemos encontrado notas para esta asignatura.",
+    "PERMISSION_DENIED": "Lo sentimos. Necesitamos tu permiso para acceder a servicios corporativos de la universidad",
+    "WIP": "Esta funcionalidad estará disponible proximamente",
+    "USER_NOT_FOUND": "Usuario no encontrado / Token invalido o expirado",
+    "SITE": "Parece que hay algun problema con el sitio. Vuelve a probarlo más tarde",
+    "NO_SCHEDULE": "No hay eventos a mostrar.",
+    "NO_EVENTS": "No hay eventos a mostrar.",
+    "SCHEDULE_NOT_ENROLLMENT": "No está disponible tu horario",
+    "RESTRICTED": "El acceso a este apartado está restringido a estudiantes de grado y máster",
+    "GRADES_NOT_ENROLLMENT": "No tienes assignaturas matriculadas",
+    "INCORRECT_CEDENTIALS": "ERROR: Credenciales incorrectas o contraseña caducada",
+    "UNDER_MAINTENANCE": "La aplicación está <b>en mantenimento</b>. Esperemos que vuelva a funcionar en breves. Vuelve a probarlo más tarde."
+  },
+  "LOG_IN": {
+    "TITLE": "UPC App",
+    "USER": "Usuario",
+    "PASSWORD": "Contraseña",
+    "RESET_PASS": "Cambio y olvido de contraseña",
+    "ENTER": "Entrar",
+    "UPC": "© <b>UPC</b> Universitat Politècnica de Catalunya · BarcelonaTech"
+  },
+  "ALERT_UPDATE": {
+    "HEADER": "Nueva Versión",
+    "MESSAGES": {
+      "CRITICAL": "Versión {{version}} esta disponible en la tienda Actualiza la aplicación para poder seguir utilizandola.",
+      "ANNOYING": "La versión <strong>{{version}}</strong> está disponible en la tienda. \nLe recomendamos que actualice a la última versión."
+    },
+    "BUTTONS": {
+      "UPDATE": "Actualizar",
+      "NOT_NOW": "Ahora no"
+    }
+  }
+}

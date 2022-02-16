@@ -1,0 +1,37 @@
+<ion-header class="calendar">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button *ngIf="!hasPrevious"></ion-menu-button>
+      <ion-back-button *ngIf="hasPrevious" defaultHref="/pages/home" mode="md" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'EVENTS.CALENDAR.TITLE' | translate }}</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+     <!--<ion-buttons slot="start">
+       <ion-icon name="arrow-back" mode="ios" (click)="goToPreviousMonth()"></ion-icon>
+     </ion-buttons>-->
+    <div class="title-calendar">
+      <ion-button class="button-month-name" fill="clear" mode="ios" (click)="toggleTitleMonth()">
+        <span class="subtitle-g black">{{ titleMonth }}</span>
+        <ion-icon class="subtitle-g black" [name]="active ? 'chevron-up-outline' : 'chevron-down-outline'"></ion-icon>
+      </ion-button>
+    </div>
+     <!--<ion-buttons slot="end">
+       <ion-icon name="arrow-forward" mode="ios" (click)="goToNextMonth()"></ion-icon>
+     </ion-buttons>-->
+  </ion-toolbar>
+</ion-header>
+<ion-content 
+  [scrollEvents]="true"
+  (ionScroll)="logScrolling($event)">
+  <div class="content-calendar-list-events">
+    <div class="header-cal" [ngClass]="{'active': this.active}">
+      <ion-toolbar class="toolbar-cal" [ngClass]="{'active': this.active}">
+        <app-calendar [ngClass]="{'active': this.active}" [altura]=!this.active class="calendar" [calendar]="calendar" (exportMyCalendar)="exportMyCalendar($event)"></app-calendar>
+      </ion-toolbar>
+    </div>
+    <div class="list-events" [ngClass]="{'active': this.active}">
+      <app-list-events [viewAll]="true" [apiEvents]="eventsForDay" [errorEvents]="errorEvents" backPage="/pages/home/events"></app-list-events>
+    </div>
+  </div>
+</ion-content>

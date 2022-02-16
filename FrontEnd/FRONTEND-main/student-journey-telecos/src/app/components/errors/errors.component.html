@@ -1,0 +1,8 @@
+<div class="info">
+  <div class="cod"><span>COD: {{error?.errorCodeApp?.code}}</span></div>
+  <img src="../../../assets/images/error/{{error?.errorCodeApp?.image}}"/>
+  <br />
+  <div class="text" [innerHtml]="('ERRORS.' + error?.errorCodeApp?.text) | translate">
+    
+  </div>
+</div>

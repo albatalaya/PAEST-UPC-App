@@ -1,0 +1,141 @@
+<ion-header class="calendar">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{'SCHEDULE_MANAGMENT.TITLE' | translate}}</ion-title>
+  </ion-toolbar>
+  <ion-toolbar *ngIf="!error">
+    <div class="title-calendar">
+      <ion-button class="button-month-name" fill="clear" mode="ios" (click)="toggleTitleMonth()">
+        <b class="subtitle-g black">{{ titleMonth }}</b>
+        <ion-icon *ngIf="tipoVista !== 'month' && tipoVista !== 'list' && !loading" class="flecha subtitle-g black" [name]="active ? 'chevron-up-outline' : 'chevron-down-outline'"></ion-icon>
+      </ion-button>
+      <span *ngIf="tipoVista === 'day'" class="day-view-tittle secondary-text gray-disabled">{{isCurrentDay(currentDaySelected) ? (('EVENTS.TODAY' | translate) + ', ') : ''}}{{ currentDaySelected | date:'longDate' : '' : translate.currentLang }}</span>
+    </div>
+
+    <div class="iconos-calendar">
+      <ion-icon (click)="changeView('week')" *ngIf="translate.currentLang === 'en'" src="{{ '../../../assets/icon/week' + (tipoVista === 'week' && !loading ? '-blau' : '') + '.svg' }}"></ion-icon>
+      <ion-icon (click)="changeView('week')" *ngIf="translate.currentLang !== 'en'" src="{{ '../../../assets/icon/semana' + (tipoVista === 'week' && !loading ? '-blau' : '') + '.svg' }}"></ion-icon>
+      
+      <ion-icon (click)="changeView('day')" src="{{ '../../../assets/icon/dia' + (tipoVista === 'day' ? '-blau' : '') + '.svg' }}"></ion-icon>
+
+      <ion-icon (click)="changeView('list')" src="{{ '../../../assets/icon/lista' + (tipoVista === 'list' || loading ? '-blau' : '') + '.svg' }}"></ion-icon>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content
+  [scrollEvents]="true"
+  (ionScroll)="logScrolling($event)"
+>
+  <div *ngIf="error">
+    <app-errors [error]="error"></app-errors>
+  </div>
+  <div *ngIf="loading" style="height: 100%;">
+    <ion-skeleton-text animated style="height: 20px; width: 70%; margin-top: 20px; margin-left: 5%;"></ion-skeleton-text>
+    <ion-skeleton-text animated style="height: 100px; width: 90%; margin-top: 20px; margin-left: 5%;"></ion-skeleton-text>
+    <ion-skeleton-text animated style="height: 100px; width: 90%; margin-top: 20px; margin-left: 5%;"></ion-skeleton-text>
+    <ion-skeleton-text animated style="height: 100px; width: 90%; margin-top: 20px; margin-left: 5%;"></ion-skeleton-text>
+    <ion-skeleton-text animated style="height: 20px; width: 70%; margin-top: 20px; margin-left: 5%;"></ion-skeleton-text>
+    <ion-skeleton-text animated style="height: 100px; width: 90%; margin-top: 20px; margin-left: 5%;"></ion-skeleton-text>
+    <ion-skeleton-text animated style="height: 100px; width: 90%; margin-top: 20px; margin-left: 5%;"></ion-skeleton-text>
+  </div>
+  <div *ngIf="!error" style="height: 100%;">
+    <div *ngIf="goToCurrentDayState" class="reset-day {{isIos ? 'reset-day-ios' : ''}}" (click)="goToCurrentDay()"><ion-icon name="calendar-number"></ion-icon> {{'SCHEDULE_MANAGMENT.TODAY' | translate}}</div>
+    <div class="header-cal" [ngClass]="{'active': this.active}" [ngStyle]="{'display': this.active ? 'block' : 'none'}">
+      <ion-toolbar class="toolbar-cal" [ngClass]="{'active': this.active}">
+          <calendar  class="calendar" [ngClass]="{'active': this.active}" id="month-calendar-select"
+          [currentDate]="currentDaySelected"
+          [startingDayMonth]="1"
+          [locale]="translate.currentLang"
+          calendarMode="month"
+          [showEventDetail]="false"
+          (onTimeSelected)="onTimeSelected($event)"
+          step="30"></calendar>
+      </ion-toolbar>
+    </div>
+    <div class="contenido" [ngClass]="{'active': this.active}" [ngStyle]="{'display': tipoVista !== 'list' ? 'block' : 'none'}">
+      <calendar-gestio-horaris id="month-calendar"
+        [eventSource]="eventSource"
+        [currentDate]="calendar.currentDate"
+        [startingDayMonth]="calendar.startingDay"
+        [startingDayWeek]="calendar.startingDay"
+        [startHour]="calendar.startHour"
+        [endHour]="calendar.endHour"
+        [showEventDetail]="calendar.showEvent"
+        [locale]="calendar.locale"
+        [calendarMode]="calendar.mode"
+        autoSelect=false
+        formatMonthTitle="MMMM, yyyy"
+        (onTitleChanged)="onViewTitleChanged($event)"
+        (onCurrentDateChanged)="onCurrentDateChanged($event)"
+        [weekviewNormalEventTemplate]="templateWeekviewNormalEventTemplate"
+        [dayviewNormalEventTemplate]="templateDayviewNormalEventTemplate"
+        [weekviewAllDayEventSectionTemplate]="templateWeekviewAllDayEventSectionTemplate"
+        step="30">
+      </calendar-gestio-horaris>
+    </div>
+
+    <div class="contenido-list fondo" *ngIf="tipoVista === 'list'">
+      <div *ngFor="let actividadObject of actividadesList; let last = last">
+        <div *ngIf="actividadObject" id="{{isCurrentDay(actividadObject.date) ? 'currentDayListView' : ''}}">
+            <div class="header-events-title {{isCurrentDay(actividadObject.date) ? 'subtitle-g' : 'subtitle-m'}} black">{{isCurrentDay(actividadObject.date) ? (('EVENTS.TODAY' | translate) + ', ') : ''}}{{ actividadObject.date | date:'longDate' : '' : translate.currentLang }} 
+              <ion-icon class="current-day-list" *ngIf="isCurrentDay(actividadObject.date)" name="ellipse"></ion-icon></div>
+            <ion-row *ngFor="let activitat of actividadObject.events" class="card-activitat" [ngStyle]="{'background-color': activitat.color}" (click)="actividadDetail(activitat)">
+              <ion-col class="actividad-hours range ion-align-self-center" size="3" [ngStyle]="{'background-color': activitat.colorCaja}">
+                <p class="hour-range-inicia subtitle-m black">{{ activitat.startTime | date: 'H:mm' }}</p>
+                <p class="hour-range-finaliza primary-text-s black">{{ activitat.endTime | date: 'H:mm' }}</p>
+                <div class="acatividad-tipus">
+                  <div [ngStyle]="{'background-color': activitat.colorSombra, 'border-radius': '15px'}">
+                    <span class="tipoActividad" [ngStyle]="{'color': activitat.colorLetra, 'padding': '12px'}">{{('SCHEDULE_MANAGMENT.TYPE_ACTIVITY_' + activitat.tipusActivitat) | translate}}</span>
+                  </div>
+                </div>
+              </ion-col>
+              <ion-col class="actividad-info ion-align-self-center">
+                <div class="info-class">
+                <p class="titulo-actividad subtitle-m black">{{ activitat.sigles }} - {{ activitat.title }}</p>
+                <div class="info-actividad secondary-text gray-disabled">
+                  <div class="texto-aula"><span *ngFor="let aula of activitat.aules">{{ aula + ' ' }}</span></div>
+                  <div class="texto-profesor" *ngIf="activitat.professorsText"><span><ion-icon name="person-outline"></ion-icon> {{ (activitat.professorsText ? activitat.professorsText : '') }}</span></div>
+                </div>
+              </div>
+              </ion-col>
+            </ion-row>
+            <div class="noEvents secondary-text gray-disabled" *ngIf="actividadObject.events.length === 0">
+              {{'SCHEDULE_MANAGMENT.NO_EVENTS' | translate}}
+            </div>
+        </div>
+        {{last ? ngForFinalizado() : ''}}
+      </div>
+    </div>
+  </div>
+</ion-content>
+<div *ngIf="lastUpdated" class="lastUpdateDate secondary-text gray-disabled {{isIos ? 'lastUpdateDate-ios' : ''}}">
+  {{'SCHEDULE_MANAGMENT.DATA_UPDATED' | translate}} {{ lastUpdated | date: 'shortDate' : '' : translate.currentLang }} {{'SCHEDULE_MANAGMENT.AT' | translate}} {{ lastUpdated | date: 'shortTime' : '' : translate.currentLang }}h
+</div>
+
+<ng-template #templateWeekviewNormalEventTemplate let-displayEvent="displayEvent">
+  <div class="calendar-event-inner-week" (click)="actividadDetail(displayEvent.event)" [ngStyle]="{'background-color': displayEvent.event.colorCaja}">
+    <span><b>{{displayEvent.event.sigles}}</b></span>
+    <br />
+    <div *ngFor="let aula of displayEvent.event.aules"><span [ngStyle]="{'color': displayEvent.event.colorLetra}">{{aula}}</span></div>
+    <div [ngStyle]="{'background-color': displayEvent.event.colorSombra, 'border-radius': '15px'}"><span [ngStyle]="{'color': displayEvent.event.colorLetra}">{{displayEvent.event.tipusActivitat}}</span></div>
+  </div>
+</ng-template>
+
+<ng-template #templateDayviewNormalEventTemplate let-displayEvent="displayEvent">
+    <div class="calendar-event-inner-day-view" (click)="actividadDetail(displayEvent.event)" [ngStyle]="{'background-color': displayEvent.event.colorCaja}">
+      <div class="info separacion"><span class="subtitle-m black">{{displayEvent.event.sigles}} - {{displayEvent.event.title}}</span></div>
+      <div class="info separacion secondary-text gray-disabled">
+        <div class="texto-aula"><span *ngFor="let aula of displayEvent.event.aules">{{ aula + ' ' }}</span></div>
+        <div class="texto-profesor" *ngIf="displayEvent.event.professorsText"><span><ion-icon name="person-outline"></ion-icon> {{ (displayEvent.event.professorsText ? displayEvent.event.professorsText : '') }}</span></div>
+      </div>
+      <div class="separacion"><div [ngStyle]="{'width': ' fit-content', 'background-color': displayEvent.event.colorSombra, 'border-radius': '15px'}"><span [ngStyle]="{'color': displayEvent.event.colorLetra, 'padding': '12px'}">{{('SCHEDULE_MANAGMENT.TYPE_ACTIVITY_' + displayEvent.event.tipusActivitat) | translate}}</span></div></div>
+    </div>
+</ng-template>
+
+<ng-template #templateWeekviewAllDayEventSectionTemplate let-day="day" let-eventTemplate="eventTemplate">
+  <span [class.current-day]="isCurrentDay(day.date)">
+    <ion-icon  class="dot-icon" *ngIf="isCurrentDay(day.date)" name="ellipse"></ion-icon>{{day.date | date: 'd'}}</span>
+</ng-template>

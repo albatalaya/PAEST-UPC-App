@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'SCHEDULE_MANAGMENT.TITLE' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="cabecera" [ngStyle]="{'background-color': actividadObject?.colorCaja}">
+    <p class="titulo-actividad title-g black">{{ actividadObject?.sigles }} - {{ actividadObject?.title }}</p>
+    <div class="info-actividad">
+      <span class="primary-text-g black">COD: {{ actividadObject?.cod }} </span>
+      <span class="grupo-info primary-text-g black"><ion-icon name="people-outline"></ion-icon> {{'SCHEDULE_MANAGMENT.GROUP' | translate}}: {{ actividadObject?.grup }}</span>
+
+      <p *ngFor="let professor of actividadObject.professors" class="secondary-text gray-disabled"><ion-icon name="person-outline"></ion-icon> {{(professor.nom + ' ' + professor.cognoms)}}</p>
+    </div>
+  </div>
+  
+  <div class="contenido">
+    <div class="info" *ngIf="actividadObject.startTime">
+      <p class="subtitle-g black">{{'SCHEDULE_MANAGMENT.DATE_TIME' | translate}}</p>
+      <div class="info-content primary-text-g black">
+        <span>{{ actividadObject?.startTime | date: 'shortDate' : '' : translateService.currentLang }}</span>
+        <span>{{ actividadObject?.startTime | date: 'H:mm' }} - {{ actividadObject?.endTime | date: 'H:mm' }}</span>
+      </div>
+    </div>
+    <hr *ngIf="actividadObject.startTime" />
+  
+    <div class="info" *ngIf="actividadObject.idioma">
+      <p class="subtitle-g black">{{'SCHEDULE_MANAGMENT.LANGUAGE' | translate}}</p>
+      <div class="info-content primary-text-g black">
+        <span>{{ actividadObject?.idioma }}</span>
+      </div>
+    </div>
+    <hr *ngIf="actividadObject.idioma"/>
+  
+    <div class="info" *ngIf="actividadObject.tipusActivitat">
+      <p class="subtitle-g black">{{'SCHEDULE_MANAGMENT.TYPE' | translate}}</p>
+      <div class="info-content primary-text-g black">
+        <div [ngStyle]="{'width': ' fit-content', 'background-color': actividadObject?.colorSombra, 'border-radius': '15px'}">
+          <span class="tipoActividad" [ngStyle]="{'color': actividadObject?.colorLetra, 'padding': '12px'}">{{('SCHEDULE_MANAGMENT.TYPE_ACTIVITY_LONG_' + actividadObject?.tipusActivitat) | translate}}</span>
+        </div>
+      </div>
+    </div>
+    <hr *ngIf="actividadObject.tipusActivitat"/>
+  
+    <div class="info" *ngIf="actividadObject.campus">
+      <p class="subtitle-g black">{{'SCHEDULE_MANAGMENT.CAMPUS' | translate}}</p>
+      <div class="info-content primary-text-g black">
+        <span class="texto-aula">{{ actividadObject?.campus }}</span>
+      </div>
+    </div>
+    <hr *ngIf="actividadObject.campus"/>
+  
+    <div class="info" *ngIf="actividadObject.aules">
+      <p class="subtitle-g black">{{'SCHEDULE_MANAGMENT.CLASSROOM' | translate}}</p>
+      <div class="info-content primary-text-g black">
+        <span class="texto-aula" *ngFor="let aula of actividadObject.aules" [ngStyle]="{'color': actividadObject?.colorLetra}">{{ aula }}</span>
+      </div>
+    </div>
+    <hr *ngIf="actividadObject.aules"/>
+  
+    <div class="info" *ngIf="actividadObject.obsevacions">
+      <p class="subtitle-g black">{{'SCHEDULE_MANAGMENT.OBSERVATIONS' | translate}}</p>
+      <div class="info-content primary-text-g black">
+        <p>{{actividadObject?.obsevacions}}</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

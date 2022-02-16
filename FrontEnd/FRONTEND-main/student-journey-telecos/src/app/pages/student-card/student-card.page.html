@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{ 'STUDENT_CARD.TITLE_DETAIL' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-card class="student-card">
+      <div class="background-blue">
+        <div class="div-image-logo">
+          <img src="./assets/images/logo-upc.png" alt="user" class="logo-upc" />
+        </div>
+        <ion-grid class="grid-profile">
+          <ion-row class="cont-data">
+            <ion-col class="cont-data-text">
+              <span class="name">{{ user.student.fullName | titlecase }}</span>
+              <span class="role">{{ user.student.role | uppercase }}</span>
+              <span class="center">{{ user.student.uePerfil[0].ueAcronim }}</span>
+            </ion-col>
+            <ion-col size="4" class="div-profile-pic">
+              <img *ngIf="user?.student.photo" class="profile-pic" [src]="sanitizeImageUrl(user?.student.photo)"/>
+              <img *ngIf="!user?.student.photo" class="profile-pic" src="../../../assets/images/avatar.png"/>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+      <div class="card-bottom">
+        <div class="card-data">
+          <div class="card-data-top">
+            <div class="card-labels black">
+              <span class="title-m">DNI</span>
+              <span *ngIf="user?.student.role === 'Student'" class=" primary-text-m">{{ user.student.document }}</span>
+              <span *ngIf="user?.student.role === 'Tester'" class=" primary-text-m">48FORBIDDE-N</span>
+            </div>
+            <div class="card-labels black expires-labels">
+              <span class="title-m">{{'STUDENT_CARD.EXPIRES' | translate}}</span>
+              <span class="primary-text-m">{{ card[0].dataCaducitat | date: 'MM/yyyy' }}</span>
+            </div>
+          </div>
+          <div class="card-labels black card-data-bottom">
+            <span class="title-m">{{'STUDENT_CARD.CODE' | translate}}</span>
+            <span class="primary-text-m">{{ card[0].pan }}</span>
+          </div>
+        </div>
+        <div>
+          <div class="cont-barcode">
+            <img id="barcode"/>
+          </div>
+        </div>
+      </div>
+    </ion-card>
+
+  </div>
+</ion-content>
+<!-- <div class="lastUpdateDate secondary-text gray-disabled {{isIos ? 'lastUpdateDate-ios' : ''}}">
+  {{ counterDate }}
+</div> -->

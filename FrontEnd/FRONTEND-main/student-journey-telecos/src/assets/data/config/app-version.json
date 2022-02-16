@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "major": "critical",
+        "minor": "critical",
+        "patch": "annoying",
+        "revision": "annoying",
+        "_id": "6079721ad601cb0013d37666"
+    },
+    "version": "1.0.4",
+    "_id": "6079721ad601cb0013d37666"
+}

@@ -1,0 +1,35 @@
+.caja{
+    padding: 15px;
+    background-color: white;
+}
+
+.cross{
+    text-align: right;
+    color: var(--ion-color-text-card);
+    margin-bottom: 10px;
+}
+
+.body {
+    width: 100%;
+
+    .icon {
+        width: 15%;
+        color: var(--ion-color-primary);
+        display: inline-block;
+        font-size: 30px;
+        vertical-align: top;
+    }
+
+    .text-info{
+        display: inline-block;
+        width: 84%;
+    }
+
+    .text-info div{
+        margin-bottom: 10px;
+    }
+
+    .text-info div:last-child{
+        margin-bottom: 0px;
+    }
+}

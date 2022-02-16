@@ -1,0 +1,23 @@
+.content-wip {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#006da4+0,00c2de+100 */
+    background: var(--ion-color-white); /* Old browsers */
+
+    height: 100%;
+    display: flex;
+    justify-content: center!important;
+    align-items: center;
+    flex-direction: column;
+}
+
+img.wip-img {
+    width: 70%!important;
+}
+
+h5.wip-title {
+    font-size: 1.777em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: var(--ion-color-primary);
+    margin-top:16%;
+    text-transform: uppercase;
+}

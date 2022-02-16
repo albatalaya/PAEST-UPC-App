@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" text="" [defaultHref]="backRoute"></ion-back-button>
+    </ion-buttons>
+  <ion-title>{{'LOG_IN.TITLE' | translate}}</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div *ngIf="error" class="alert">
+    <ion-icon name="warning" size="large"></ion-icon> {{'ERRORS.' + error.errorCodeApp.text | translate}}
+  </div>
+
+  <img src="../../../../assets/images/login.png"/>
+
+  <form [formGroup]="todo" (ngSubmit)="logIn()">
+    <ion-item class="item">
+      <ion-input type="text" placeholder="{{'LOG_IN.USER' | translate}}" formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item class="item">
+      <ion-input type="password" placeholder="{{'LOG_IN.PASSWORD' | translate}}" formControlName="password"></ion-input>
+    </ion-item>
+    <div class="forgot item link-m blue" (click)="openForgot()">
+      <ion-icon name="help-circle" size="large"></ion-icon>
+      <ion-label>{{'LOG_IN.RESET_PASS' | translate}}</ion-label>
+    </div>
+  
+    <ion-button [disabled]="!todo.valid" type="submit" class="enter-button" shape="round" expand="block" color="primary"  mode="ios">{{ 'LOG_IN.ENTER' | translate }}</ion-button>  
+  </form>
+  <div class="div-about">
+    <p class="about secondary-tex" innerHtml="{{ 'LOG_IN.UPC' | translate }}"></p>
+  </div>
+</ion-content>

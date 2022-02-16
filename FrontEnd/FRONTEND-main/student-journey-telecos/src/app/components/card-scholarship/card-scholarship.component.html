@@ -1,0 +1,22 @@
+  <div class="card-scholarship" [ngClass]='{"indefinit" : scholarshipItem?.status === 0, "obre-aviat" : scholarshipItem?.status === 1, "obert" :
+    scholarshipItem?.status === 2, "termini-tancat" : scholarshipItem?.status === 3}'>
+   <div class="scholarship-name title-m white">
+    {{scholarshipItem.title}}
+   </div>
+   <div class="scholarship-details">
+      <div class="scholarship-status">
+        <span *ngIf="scholarshipItem?.status === 0" class="subtitle-m black">{{ 'SCHOLARSHIPS.UNDEFINED' | translate }}</span>
+        <span *ngIf="scholarshipItem?.status === 1" class="subtitle-m black">{{ 'SCHOLARSHIPS.OPEN_SOON' | translate }}</span>
+        <span *ngIf="scholarshipItem?.status === 2" class="subtitle-m black">{{ 'SCHOLARSHIPS.OPENED' | translate }}</span>
+        <span *ngIf="scholarshipItem?.status === 3" class="subtitle-m black">{{ 'SCHOLARSHIPS.CLOSED' | translate }}</span>
+      </div>
+      <div class="scholarship-status data">
+         <ion-icon class="icon-library icon-occupancy" name="calendar" *ngIf="scholarshipItem?.status !== 0"></ion-icon>
+         <span class="until" *ngIf="scholarshipItem?.status === 2">{{ 'SCHOLARSHIPS.UNTIL' | translate }}</span>
+         <span class="scholarship-date" *ngIf="scholarshipItem?.status === 1">{{ 'SCHOLARSHIPS.FROM_THE' | translate }}</span>
+         <span class="scholarship-date" *ngIf="scholarshipItem?.status === 3">{{ 'SCHOLARSHIPS.FROM' | translate }}</span>
+         <span class="scholarship-date" *ngIf="scholarshipItem?.status === 2 || scholarshipItem?.status === 3">{{scholarshipItem.endDate}}</span>
+         <span class="scholarship-date" *ngIf="scholarshipItem?.status === 1">{{scholarshipItem.startDate}}</span>
+      </div>
+   </div>
+  </div>

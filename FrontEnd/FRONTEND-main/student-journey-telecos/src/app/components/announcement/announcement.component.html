@@ -1,0 +1,28 @@
+<div class="caja">
+  <div class="cross" *ngIf="home" (click)="eliminarAnnouncement()">
+      <ion-icon name="close"></ion-icon>
+  </div>
+  <div class="body" (click)="announcementDetail()">
+    <div class="icon">
+      <ion-icon *ngIf="announcement?.type.includes('schedule')" name="calendar-clear"></ion-icon>
+      <ion-icon *ngIf="announcement?.type.includes('grade')"  name="create"></ion-icon>
+      <ion-icon *ngIf="announcement?.type === 'generic' || announcement?.type === 'filtered'" name="information-circle"></ion-icon>
+    </div>
+    <div class="text-info">
+      <div class="description primary-text-m black">
+          <span *ngIf="announcement?.type === 'schedule_date'" [innerHTML]="'ANNOUNCEMENTS.SCHEDULE_DATE' | translate:{name: announcement?.name_assignatura[translate.currentLang], oldDate:  announcement?.old_date, newDate: announcement?.new_date}"></span>
+          <span *ngIf="announcement?.type === 'schedule_room'" [innerHTML]="'ANNOUNCEMENTS.SCHEDULE_ROOM' | translate:{name: announcement?.name_assignatura[translate.currentLang], date:  announcement?.start_date, room: announcement?.new_room}"></span>
+          <span *ngIf="announcement?.type === 'schedule_cancellation'" [innerHTML]="'ANNOUNCEMENTS.SCHEDULE_CANCELLATION' | translate:{name: announcement?.name_assignatura[translate.currentLang], day:  announcement?.start_date, from: announcement?.from, to: announcement?.to}"></span>
+          <span *ngIf="announcement?.type === 'grade_final'" [innerHTML]="'ANNOUNCEMENTS.GRADE_FINAL' | translate:{activity: announcement?.name_activity[translate.currentLang], subject:  announcement?.name_assignatura[translate.currentLang]}"></span>
+          <span *ngIf="announcement?.type === 'grade_activity'">Nueva actividad falta por definir</span>
+          <span *ngIf="announcement?.type === 'generic' || announcement?.type === 'filtered'" [innerHTML]="'<b>' + announcement?.title[translate.currentLang] + '</b><br/>' + announcement?.description[translate.currentLang]"></span>
+      </div>
+      <div class="more-info link-m blue" (click)="announcementDetail()" *ngIf="announcement?.type === 'generic' || announcement?.type === 'filtered'">
+        {{ 'ANNOUNCEMENTS.MORE_INFO' | translate }}</div>
+      <div *ngIf="horsDiff < 24 && horsDiff > 0" class="secondary-text gray-disabled">{{ 'ANNOUNCEMENTS.SINCE_HOURS' | translate:{hours: horsDiff} }}</div>
+      <div *ngIf="horsDiff > 24 && daysDiff > 1" class="secondary-text gray-disabled">{{ 'ANNOUNCEMENTS.SINCE_DAYS' | translate:{days: daysDiff} }}</div>
+      <div *ngIf="daysDiff === 1" class="secondary-text gray-disabled">{{ 'ANNOUNCEMENTS.YESTERDAY' | translate }}</div>
+      <div *ngIf="horsDiff === 0" class="secondary-text gray-disabled">{{ 'ANNOUNCEMENTS.NOW' | translate }}</div>
+    </div>
+  </div>
+</div>

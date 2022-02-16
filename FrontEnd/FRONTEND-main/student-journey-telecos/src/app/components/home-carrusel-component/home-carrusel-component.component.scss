@@ -1,0 +1,43 @@
+.welcome-card {
+    border-radius: 0 !important;
+    max-height: 35vh;
+
+    img {
+      max-height: 35vh;
+      overflow: hidden;
+
+    }
+}
+
+.info{
+    height: 15vh;
+    width: 22vh;
+    position: fixed;
+    top: 25%;
+    right: 12%;
+
+    img {
+        display: block;
+        margin:auto;
+        max-height: 10vh;
+        width: auto;
+        height: auto;
+    }
+}
+
+.text{
+    font-size: 23px;
+    color: white;
+    white-space: nowrap;
+}
+
+
+ion-card {
+    width: 100%;
+    margin: 0px auto  ;
+   
+}
+img{
+    max-height: 35vh;
+    width:100%;
+}

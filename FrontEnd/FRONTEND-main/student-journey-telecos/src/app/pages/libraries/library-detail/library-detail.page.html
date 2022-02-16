@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ library?.id }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="cabecera ion-padding">
+    <h4 class="title-g black">{{ library?.data.name }}</h4>
+    <div class="info-biblioteca">
+      <ion-icon name="navigate-outline"></ion-icon>
+      <p class="location-p primary-text-g black" (click)="openNavigation()">{{ library?.data.address }}</p>
+    </div>
+    <div class="info-biblioteca">
+      <ion-icon name="location-outline"></ion-icon>
+      <p class="location-p primary-text-g black">{{ library?.distance.distance }}{{ library?.distance.type }}</p>
+    </div>
+    <div class="occupancy">
+      <ion-icon name="people-outline"></ion-icon>
+      <div class="progress-bar">
+        <app-progress-bar *ngIf="library?.occupancyRate != null" class="progress-rate" [primaryColor]="library?.color" [secondaryColor]="'#E6E6E6'"
+        [percentaje]="library?.occupancyRate + '%'" [heightProgressBar]="'8px'">
+        </app-progress-bar>
+      </div>
+    </div>
+  </div>
+
+  <div class="ion-padding">
+    <div class="fondo ion-padding">
+      <p class="title-month subtitle-g black">{{ titleMonth ? titleMonth : (currentDate | date: 'LLLL, yyyy')}}</p>
+      <div class="calendar">
+      <calendar id="month-calendar"
+          [eventSource]="eventSource"
+          [currentDate]="calendar.currentDate"
+          [startingDayMonth]="calendar.startingDay"
+          [startHour]="calendar.startHour"
+          [endHour]="calendar.endHour"
+          [showEventDetail]=calendar.showEvent
+          [locale]="calendar.locale"
+          [maxSlides]="3"
+          calendarMode="month"
+          autoSelect=false
+          formatMonthTitle="MMMM, yyyy"
+          (onTitleChanged)="onViewTitleChanged($event)"
+          step="30"></calendar>
+      </div>
+      <div class="legend">
+        <div class="timetable" *ngFor="let timetable of library?.legend">
+          <div class="square" [ngStyle]="{'background-color': timetable.backgroundColor}"></div>
+          <span class="secondary-text gray-disabled">
+            {{timetable.tag}}
+          </span>
+        </div>
+      </div>
+      <ion-button class="add-book-room-button" shape="round" expand="block" color="primary"  mode="ios" (click)="goToReservas()">{{ 'LIBRARIES.BOOK_ROOM' | translate }}</ion-button>
+    </div>
+
+    <ion-item class="links-library subtitle-g black" detail lines="none" [routerLink]="['contact']" [queryParams]="{id: library?.id}">{{ 'LIBRARIES.CONTACT' | translate }}</ion-item>
+    <ion-item class="links-library subtitle-g black" detail lines="none" (click)="goToWeb()">{{ 'LIBRARIES.WEB' | translate }}</ion-item>
+    <ion-item class="links-library subtitle-g black" detail lines="none" (click)="goToStudent()">{{ 'LIBRARIES.STUDENT_LIBRARY' | translate }}</ion-item>
+    <ion-item class="links-library subtitle-g black" detail lines="none" (click)="goToCovid()">{{ 'LIBRARIES.FAQ_LIBRARY' | translate }}</ion-item>
+    <ion-item class="links-library subtitle-g black" detail lines="none" (click)="goToInternationalStudent()">{{ 'LIBRARIES.INTERNATIONAL' | translate }}</ion-item>
+    <ion-item class="links-library subtitle-g black" detail lines="none" (click)="goToDoctorand()">{{ 'LIBRARIES.DOCTORAND' | translate }}</ion-item>
+  </div>
+</ion-content>

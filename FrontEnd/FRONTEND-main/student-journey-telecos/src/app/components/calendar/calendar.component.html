@@ -1,0 +1,21 @@
+<div class="calendar" [ngClass]="{'active': this.active, 'no-mostrar': this.altura}">
+    <div class="month-view" [ngClass]="{'active': this.active}">
+      
+      <calendar #calendario id="month-calendar"
+      [eventSource]="eventSource"
+      [currentDate]="calendar.currentDate"
+      [startingDayMonth]="calendar.startingDay"
+      [startHour]="calendar.startHour"
+      [endHour]="calendar.endHour"
+      [showEventDetail]=calendar.showEvent
+      [locale]="calendar.locale"
+      autoSelect=false
+      calendarMode="month"
+      formatMonthTitle="MMMM, yyyy"
+      (onCurrentDateChanged)="onCurrentDateChanged($event)"
+      (onTitleChanged)="onViewTitleChanged($event)"
+      (onTimeSelected)="onTimeSelected($event)"
+      step="30"></calendar>
+
+    </div>
+</div>

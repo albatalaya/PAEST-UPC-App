@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'SCHOLARSHIPS.DETAIL.TITLE' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div *ngIf="scholarshipItem">
+    <div class="toolbar-scholarship" [ngClass]='{"undefined" : status === 0, "open-soon" : status === 1, "opened" :
+    status === 2, "closed" : status === 3}'>
+      <h4 class="title-g while">{{scholarshipItem?.title}}</h4>
+      <ion-row>
+        <ion-col no-padding class="scholarship-status" align-self="center">
+          <span class="undefined subtitle-g" *ngIf="status === 0">{{ 'SCHOLARSHIPS.UNDEFINED' | translate }}</span>
+          <span class="open-soon subtitle-g" *ngIf="status === 1">{{ 'SCHOLARSHIPS.OPEN_SOON' | translate }}</span>
+          <span class="opened subtitle-g" *ngIf="status === 2">{{ 'SCHOLARSHIPS.OPENED' | translate }}</span>
+          <span class="closed subtitle-g" *ngIf="status === 3">{{ 'SCHOLARSHIPS.CLOSED' | translate }}</span>
+
+          <div class="opened data" *ngIf="status !== 0">
+            <ion-icon class="icon-library icon-occupancy" [ngClass]="{'closed': status === 3, 'open-soon': status === 1}" name="calendar"></ion-icon>
+            <span class="until" *ngIf="status === 2">{{ 'SCHOLARSHIPS.UNTIL' | translate }} </span>
+            <span class="scholarship-date open-soon" *ngIf="status === 1">{{ 'SCHOLARSHIPS.FROM_THE' | translate }} </span>
+            <span class="scholarship-date closed" *ngIf="status === 3">{{ 'SCHOLARSHIPS.FROM' | translate }} </span>
+            <span class="scholarship-date" [ngClass]="{closed: status === 3}" *ngIf="status === 2 || status === 3">{{scholarshipItem?.endDate}}</span>
+            <span class="scholarship-date open-soon" *ngIf="status === 1">{{scholarshipItem?.startDate}}</span>
+          </div>
+        </ion-col>
+        <ion-col no-padding align-self="center">
+          <div class="ion-text-right suport subtitle-m" [ngClass]='{"undefined" : status === 0, "open-soon" : status === 1, "opened" :
+          status === 2, "closed" : status === 3}'>
+            <ion-icon name="help-circle"></ion-icon>
+            <a href="https://demana.upc.edu/sga/">DemanaSGA</a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+    <!-- <hr class="my-split-line"> -->
+    <div class="description ion-padding">
+      <p class="primary-text-g black" [innerHTML]="sanitizerHTML(scholarshipItem?.summary)"> 
+    </div>
+    <div *ngIf="listSections.length > 0">
+      <a detail-none class="accordion" *ngFor="let item of listSections" (click)="expandItem(item)">
+        <div class="accordion-content">
+          <ion-label class="label-title-category subtitle-g black">
+            {{ item?.title | translate }}
+          </ion-label>
+          <ion-icon [name]="!item?.expanded ? 'chevron-down-outline' :'chevron-up-outline'" item-end class="black"></ion-icon>
+        </div>
+        <app-expandable [expandHeight]="1000" [expanded]="item?.expanded">
+          <div *ngFor="let section of item.subsection">
+            <h5 *ngIf="section">{{section.title}}</h5>
+            <div *ngIf="section" class="section-content" [innerHTML]="sanitizerHTML(section.content)">
+            </div>
+          </div>
+        </app-expandable>
+      </a>
+    </div>
+  </div>
+  <div *ngIf="!scholarshipItem">
+    <div class="toolbar-scholarship" [ngClass]='{"undefined" : status === 0, "open-soon" : status === 1, "opened" :
+    status === 2, "closed" : status === 3}'>
+      <ion-skeleton-text animated style="height: 20px; margin-top: 15px;"></ion-skeleton-text>
+      <ion-row style="width: 100%; margin-top: 15px">
+        <div style="width: 100%">
+          <div style="display: inline-block; width: 60%">
+            <ion-skeleton-text animated></ion-skeleton-text>
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </div>
+          <div style="display: inline-block; width: 30%; margin-left: 10%; top: -13px; position: relative">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </div>
+        </div>
+      </ion-row>
+    </div>
+    <div *ngIf="listSections.length > 0">
+      <a detail-none class="accordion" *ngFor="let item of listSections">
+        <div class="accordion-content">
+          <ion-skeleton-text animated></ion-skeleton-text>
+          <ion-icon [name]="!item?.expanded ? 'chevron-down-outline' :'chevron-up-outline'" item-end></ion-icon>
+        </div>
+      </a>
+    </div>
+  </div>
+</ion-content>

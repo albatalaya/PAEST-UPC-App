@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button *ngIf="menu === 'true'"></ion-menu-button>
+        <ion-back-button *ngIf="menu === 'false'" mode="md" text="" defaultHref="/pages/home"></ion-back-button>
+      </ion-buttons>
+    <ion-title>{{'ANNOUNCEMENTS.TITLE' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="contenido fondo">
+    <div *ngFor="let actividadObject of announcementsList">
+      <div *ngIf="actividadObject">
+        <div class="header-events-title subtitle-g black">{{isCurrentDay(actividadObject.date) ? (('EVENTS.TODAY' | translate) + ', ') : ''}}{{ actividadObject.date | date:'longDate' : '' : translate.currentLang }}</div>
+
+        <div class="announcement" *ngFor="let announcement of actividadObject.announcements">
+          <app-announcement [announcement]="announcement" [menu]="menu"></app-announcement>
+        </div>
+      </div>
+    </div>
+
+    <ion-infinite-scroll *ngIf="announcementsList" threshold="100px" (ionInfinite)="loadMoreAnnouncements($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "student-journey",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

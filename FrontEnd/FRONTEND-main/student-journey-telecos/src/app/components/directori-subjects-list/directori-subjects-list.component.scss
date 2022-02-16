@@ -1,0 +1,43 @@
+
+.quatri{
+  text-align: center;
+  font-size: 15px;
+}
+
+.accordion {
+  //fletxa
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  text-align: left;
+  font-size: 14px;
+  color: black;
+  border-bottom-style: inset;
+  border-bottom-width: thin;
+  margin: 16px;
+
+  .accordion-content {
+    //fletxa
+      text-overflow: ellipsis;
+      overflow: hidden; 
+      white-space: nowrap;
+      display: flex;
+      padding: 16px;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .label-title-category { //assignatura
+    ion-icon {
+      margin: 0 5px;
+    }
+  }
+
+}
+
+.professors{
+  color: blue;
+  overflow: hidden;
+  padding: 0 50px 15px 15px;
+}

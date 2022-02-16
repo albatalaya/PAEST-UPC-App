@@ -1,0 +1,29 @@
+ion-content{
+    --background: var(--ion-color-white);
+}
+
+.event-detail { 
+    color: var(--ion-titles-text-card);
+
+    .description-event {
+        color: var(--ion-color-black);
+        font-size: 1.125em;
+        line-height: 1.602em;
+    }
+
+    .add-calendar-button {
+        margin-top: 10%;
+    }
+
+    .literal-text {
+        margin-top: 10%;
+    }
+
+    a {
+        color: var(--ion-titles-text-card);
+    }
+}
+
+.link {
+    text-decoration-line: underline;
+}

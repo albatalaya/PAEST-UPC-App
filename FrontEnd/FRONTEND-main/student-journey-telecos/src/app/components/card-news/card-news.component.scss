@@ -1,0 +1,44 @@
+
+.card-news-img {
+height: 100px;
+// max-height: 40%;
+}
+
+.card-img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: var(--ion-padding-custom-card);
+    // font-family: var(--custom-font-family);
+}
+
+.card-news-title {
+    margin-top: 5%;
+}
+
+$font-size: 16px;
+$line-height: 1.4;
+$lines-to-show: 2;
+
+.truncate {
+ display: block; /* Fallback for non-webkit */
+ display: -webkit-box;
+ max-width: 100%;
+ height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+ margin: 0 auto;
+ font-size: $font-size;
+ line-height: $line-height;
+ -webkit-line-clamp: $lines-to-show;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.truncate:after {
+//   content: "...";
+//   position: absolute;
+
+}

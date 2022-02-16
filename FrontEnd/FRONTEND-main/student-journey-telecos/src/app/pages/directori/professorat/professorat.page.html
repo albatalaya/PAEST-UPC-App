@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot=start  color=" white"> 
+      <ion-back-button defaultHref="/pages/assignatures"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalls del professorat</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" *ngIf="professorat">
+  <h2 id="nom"> <b> {{professorat.nom_prof}} </b></h2>
+
+  <div id="info">
+    <p><b>Adreça de correu: </b></p>
+    <a id="mail" href="mailto:{{professorat.email}}"><u>{{professorat.email}}</u></a>
+    <p><b>Despatx: </b></p>
+    <p id="x">{{professorat.despatx}}</p>
+    <p><b>Horaris de consulta: </b></p>
+    <ion-item  class= "horaris" *ngFor= "let horari of professorat.consultes">
+      <p id="x">{{horari}} </p>
+    </ion-item>
+  </div>
+
+  <ion-button class="add-book-room-button" shape="round" expand="block" color="primary"  mode="ios" [routerLink]="['/pages/consulta/'+classId+'/'+profileId]" *ngIf= "botoVisible">Demanar consulta</ion-button>
+
+</ion-content>

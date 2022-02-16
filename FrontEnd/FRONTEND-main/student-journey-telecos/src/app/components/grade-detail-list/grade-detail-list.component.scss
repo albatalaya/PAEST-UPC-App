@@ -1,0 +1,59 @@
+.credits {
+  width: 100%;
+  display: inline-block;
+  font-weight: initial;
+  padding: 18px;
+  padding-top: 0px;
+  background-color: var(--ion-color-white);
+  width: 100%;
+  position: relative;
+  left: 0%;
+
+  .separacion {
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #E5E7E9;
+  }
+
+  .progress-rate{
+      display: inline-block;
+      width: 30%;
+  }
+
+  .todas{
+      position: absolute;
+      right: 20px;
+
+    fa-icon {
+      margin-right: 8px;
+    }
+  }
+
+  span {
+    margin-left: 8px;
+  }
+}
+
+.separacion-credits{
+  padding-bottom: 12px;
+  padding-top: 8px;
+}
+
+.credits-inside-expand{
+  width: 110% !important;
+  left: -5% !important;
+}
+
+.assigments{
+    text-align: center;
+    font-size: 15px;
+
+    .subject {
+      margin: 15px;
+      --background: var(--ion-color-white);
+    }
+
+    div {
+      margin-top: 16px;
+    }
+}

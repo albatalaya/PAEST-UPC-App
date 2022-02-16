@@ -1,0 +1,114 @@
+
+
+.nombre{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ion-color-white);
+    text-align: left;
+    font-size: 14px;
+    color: black;
+    border-bottom-style: inset;
+    border-bottom-width: thin;
+    margin: 16px;
+
+    .accordion-content {
+        text-overflow: ellipsis;
+        overflow: hidden; 
+        white-space: nowrap;
+        display: flex;
+        padding: 16px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+  
+    .label-title-category {
+      ion-icon {
+        margin: 0 5px;
+      }
+    }
+
+    .label-title-last-note{
+        margin-right: 15px;
+    }
+
+    .suspes {
+        color: red;
+    }
+}
+
+.title-grade{
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+.convocatories{
+    margin: 20px;
+    background-color: #fbfbfb;
+    padding: 30px;
+
+    .cabecera-titles{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-weight: bold;
+
+        .data span{
+            display: block;
+        }
+
+        .data span:last-child{
+            font-weight: normal;
+            margin-top: 8px;
+        }
+
+        .data{
+            text-align: center;
+        }
+    }
+
+    .separacion {
+        margin-top: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #E5E7E9;
+    }
+
+    .convocatories-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .data span{
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .data span:first-child{
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .data{
+            text-align: center;
+        }
+
+        .suspes{
+            color: red;
+        }
+
+        .numConvocatoria{
+            color: black;
+            display: inline-block !important;
+        }
+    }
+}

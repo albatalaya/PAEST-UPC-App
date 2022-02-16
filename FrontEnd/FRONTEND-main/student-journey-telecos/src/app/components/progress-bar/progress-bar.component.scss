@@ -1,0 +1,19 @@
+.total-progress-level {
+    height: 10px;
+    display: flex;
+    margin: 6px 0;
+    border-radius: 15px;
+  }
+    // background-color: green;
+.my-progress-level {
+    // background-color: red;
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    // width: 40%;
+}
+
+.round-border-end-bar {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}

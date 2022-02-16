@@ -1,0 +1,13 @@
+.content-news {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--ion-color-background-card);
+    margin-top: 16px;
+  }
+  
+  .card-news {
+    width: 45%;
+    margin: 2.5%;
+    // height: 30%;
+    background-color: white;
+  }

@@ -1,0 +1,53 @@
+.contenido {
+    margin: 16px;
+    background-color: var(--ion-color-white);
+    padding-bottom: 8px;
+}
+
+.cabecera {
+    padding: 15px;
+
+    .titulo-actividad{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .info-actividad{
+        margin-right: 15px;
+    }
+
+    .grupo-info{
+        margin-left: 15px;
+    }
+}
+
+hr {
+    height: 1px;
+    width: 90%;
+    background-color: #E6E6E6;
+}
+
+hr:last-child {
+    display: none;
+}
+
+.info {
+    padding: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    .info-content{
+
+        span{
+            margin-right: 15px;
+        }
+    }
+
+    .tipoActividad{
+        margin-right: 0px !important;
+    }
+
+    .texto-aula{
+        color: var(--ion-color-primary);
+    }
+}

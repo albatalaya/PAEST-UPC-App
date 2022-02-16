@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ 'CONFIGURATION.TITLE' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-list>
+    <ion-item (click)="presentActionSheet()" *ngIf="language">
+      <ion-label class="label-language">{{ 'CONFIGURATION.LANGUAGES.TITLE' | translate }}</ion-label>
+      <ion-note slot="end">{{ 'CONFIGURATION.LANGUAGES.LANG_' + language | translate }}</ion-note>
+    </ion-item>
+  </ion-list> -->
+  <div class="div-subtitle-settings ion-padding subtitle-g black">
+      {{ 'CONFIGURATION.SUBTITLES.HOME' | translate }}
+  </div>
+  <ion-item lines="none">
+    <div class="div-icon-menu">
+      <ion-icon name="calendar" size="large"></ion-icon>
+    </div>
+    <ion-label>
+        <h2 class="primary-text-g black">{{ 'CONFIGURATION.LIST_CONFIG.EVENTS.TITLE' | translate }}</h2>
+        <ion-note class="secondary-text gray-disabled">{{ 'CONFIGURATION.LIST_CONFIG.EVENTS.EXPLANATION' | translate }}</ion-note>
+    </ion-label>
+    <ion-toggle [(ngModel)]="configuration.isEventsInHome" (ionChange)="changeShowEventsInHome($event)"></ion-toggle>
+  </ion-item> 
+  <hr class="my-split-line">
+  <div class="div-subtitle-settings ion-padding subtitle-g black">
+    {{ 'CONFIGURATION.SUBTITLES.GENERAL' | translate }}
+  </div>  
+  <ion-item lines="none">
+    <div class="div-icon-menu primary-text-g black">
+      <ion-icon name="globe-outline" size="large"></ion-icon>
+    </div>
+    <ion-label class="primary-text-g black">{{ 'CONFIGURATION.LANGUAGES.TITLE' | translate }}</ion-label>
+    <ion-select class="link-g blue" interface="popover" value="{{language}}" (ionChange)="changeLanguage($event)">
+      <ion-select-option class="select-option-lang" value="ca" selected>{{ 'CONFIGURATION.LANGUAGES.LANG_ca' | translate }}</ion-select-option>
+      <ion-select-option class="select-option-lang" value="es">{{ 'CONFIGURATION.LANGUAGES.LANG_es' | translate }}</ion-select-option>
+      <ion-select-option class="select-option-lang" value="en">{{ 'CONFIGURATION.LANGUAGES.LANG_en' | translate }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div class="footer-version">
+    <p class="subtitle-g black">{{ 'HOME.NAME_APP' | translate }}</p>
+    <p class="app-version secondary-text gray-disabled">{{ 'CONFIGURATION.VERSION' | translate }} {{ appVersion }}</p>
+    <p class="copyright">{{ 'CONFIGURATION.COPYRIGHT' | translate }}</p>
+  </div>
+</ion-content>

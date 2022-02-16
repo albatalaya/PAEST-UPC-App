@@ -1,0 +1,71 @@
+#header-menu {
+    display: none;
+}
+
+#portal-header {
+  display: none;
+}
+
+#breadcrumbs {
+  display: none;
+}
+
+.document-heading {
+    margin-top: 20px !important;
+    border-bottom: none !important;
+}
+
+.document-heading {
+    margin-top: 20px;
+    border-bottom: none;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.link-banner {
+  padding: 20px 24px;
+  background: #F5F5F5;
+}
+
+.link-banner::after {
+	border: 2px solid #707070;
+  color: #707070;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+.well {
+  font-size: 18px;
+  line-height: 1.5;
+  background: #F5F5F5;
+}
+
+.well strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.list-sections p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.btn-warning {
+    background-color: #0082C8 !important;
+    border-color: #0082C8 !important;
+    border-radius: 40px;
+    width: 90%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.list-sections li h2 {
+  font-size: 19px;
+}
+
+footer {
+  display: none;
+}

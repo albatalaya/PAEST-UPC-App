@@ -1,0 +1,21 @@
+<div class="credits" [class.credits-inside-expand]="expand">
+  <div class="separacion"><hr /></div>
+  <div class="separacion-credits">
+    <!--<div class="progress-rate">
+      <app-progress-bar [primaryColor]="'#007BC0'" [secondaryColor]="'#E6E6E6'"
+      [percentaje]="grade.percent + '%'" [heightProgressBar]="'8px'"></app-progress-bar>
+    </div>
+    <span> {{grade.creditsRestants}} ECTS</span>-->
+    <span class="todas see-all blue" [routerLink]="['/pages/grades/all-notes/' + grade.id]"><ion-icon name="chevron-forward"></ion-icon> {{'NOTE_CONSULTATION.SEE_ALL' | translate}}</span>
+  </div>
+</div>
+<div class="assigments">
+  <div *ngFor="let semester of grade.semesters">
+    <span class="subtitle-g black">{{semester.any}}</span>
+    <ion-item *ngFor="let subject of semester.subjects" class="subject subtitle-m black" detail lines="none" (click)="selectGrade(subject)">
+      {{subject.name}}</ion-item>
+    <!--<div *ngFor="let subject of semester.subjects" class="subject" (click)="selectGrade(subject)">
+      <span class="subtitle-m black">{{subject.name}}</span>
+    </div>-->
+  </div>
+</div>

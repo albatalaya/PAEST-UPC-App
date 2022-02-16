@@ -1,0 +1,28 @@
+.info{
+    width: 100%;
+
+    img {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+}
+
+.text{
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(--ion-color-primary);
+}
+
+.cod{
+    color: var(--ion-color-primary);
+    text-align: right;
+    margin-right: 15px !important;
+    font-weight: bold;
+    font-size: smaller;
+    margin-bottom: 40px;
+    margin-top: 32px;
+    }

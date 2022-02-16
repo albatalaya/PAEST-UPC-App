@@ -1,0 +1,17 @@
+.collapsed {
+    height: 0 !important;
+    width: 0 !important;
+    // background-color: rebeccapurple;
+    display: none;  
+}
+
+
+.expand-wrapper {
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-bottom: -16px;
+    padding: 6px 16px;
+    margin-top: 16px;
+    font-size: 90%;
+    padding-top: 0px;
+}

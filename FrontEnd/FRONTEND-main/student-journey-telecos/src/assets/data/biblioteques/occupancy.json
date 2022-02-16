@@ -1,0 +1,122 @@
+[
+    {
+      "id": "BRGF",
+      "siteId": "61744a93-2034-43fb-b41a-62636cc9587a",
+      "open": true,
+      "entries": 0,
+      "exits": 0,
+      "occupancy": 0,
+      "waitingTime": null,
+      "occupancyRate": 0
+    },
+    {
+      "id": "BCT",
+      "siteId": "cc135f7c-66fb-4799-8ef7-477d3d342e68",
+      "open": true,
+      "entries": 48,
+      "exits": 35,
+      "occupancy": 13,
+      "waitingTime": null,
+      "occupancyRate": 19
+    },
+    {
+      "id": "BCBL",
+      "siteId": "03ccddbb-5868-4a45-bedb-6f8e9ba1572e",
+      "open": true,
+      "entries": 159,
+      "exits": 131,
+      "occupancy": 28,
+      "waitingTime": null,
+      "occupancyRate": 37
+    },
+    {
+      "id": "BCUM",
+      "siteId": "4a8a2cea-dc50-44a2-95fa-7c4dddff7908",
+      "open": true,
+      "entries": 92,
+      "exits": 84,
+      "occupancy": 8,
+      "waitingTime": null,
+      "occupancyRate": 12
+    },
+    {
+      "id": "ETSEIB",
+      "siteId": "50f8ab31-f150-4f2d-8c86-e8d7de50b212",
+      "open": true,
+      "entries": 53,
+      "exits": 40,
+      "occupancy": 13,
+      "waitingTime": null,
+      "occupancyRate": 11
+    },
+    {
+      "id": "ETSAB",
+      "siteId": "cd75836f-3221-4916-914a-085bd3a21290",
+      "open": true,
+      "entries": 127,
+      "exits": 109,
+      "occupancy": 18,
+      "waitingTime": null,
+      "occupancyRate": 25
+    },
+    {
+      "id": "EEBE",
+      "siteId": "08180bfc-cdc3-43be-8faa-b6d91f665102",
+      "open": true,
+      "entries": 86,
+      "exits": 67,
+      "occupancy": 19,
+      "waitingTime": null,
+      "occupancyRate": 28
+    },
+    {
+      "id": "EPSEB",
+      "siteId": "e90b4d9f-1673-4564-b896-606832cd3caa",
+      "open": true,
+      "entries": 51,
+      "exits": 40,
+      "occupancy": 11,
+      "waitingTime": null,
+      "occupancyRate": 22
+    },
+    {
+      "id": "EPSEVG",
+      "siteId": "4009b401-cd01-4f85-a7a6-2154bf9696ea",
+      "open": true,
+      "entries": null,
+      "exits": null,
+      "occupancy": null,
+      "waitingTime": null,
+      "occupancyRate": null
+    },
+    {
+      "id": "ETSAV",
+      "siteId": "a322b31b-7054-4d48-8b8a-52aeeff14a73",
+      "open": true,
+      "entries": 46,
+      "exits": 41,
+      "occupancy": 5,
+      "waitingTime": null,
+      "occupancyRate": 13
+    },
+    {
+      "id": "FME",
+      "siteId": "8503dfbf-f8a4-446c-9da7-91c4bd9fbd7d",
+      "open": true,
+      "entries": null,
+      "exits": null,
+      "occupancy": null,
+      "waitingTime": null,
+      "occupancyRate": null
+    },
+    {
+      "id": "FNB",
+      "siteId": "d3853ef9-fa51-4aba-b6f7-5ed5b6191cb9",
+      "open": true,
+      "entries": 24,
+      "exits": 23,
+      "occupancy": 1,
+      "waitingTime": null,
+      "occupancyRate": 6
+    }
+  ]

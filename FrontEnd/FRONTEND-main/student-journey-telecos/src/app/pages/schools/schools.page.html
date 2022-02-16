@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+          {{ 'SCHOOLS.TITLE' | translate }}
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- Copiado de Libraries para fase 1 -->
+<ion-content class="content-schools">
+  <ion-searchbar class="seach-bar-library" inputmode="text" placeholder="{{'LIBRARIES.SEARCH' | translate}}" mode="md" debounce="500" (ionChange)="getItems($event)"></ion-searchbar>
+  <div class="subcontent-libraries">
+    <div class="card-library" *ngFor="let item of schools" (click)="openMarker(item)">
+      <div class="img-card-library">
+        <div class="img-oppacity title-g white">{{item.shortName}}</div>
+          <img class="img-library" [src]="item.image" alt=""/>   
+      </div>
+      <div class="info-library primary-text-m black">
+        {{item.caName}}
+        <!-- <div class="current-schedule-time label-soft-grey" *ngIf="item.stateOccupancy === 1">{{'LIBRARIES.OPEN_AT' | translate}} {{item.openingTime}}</div>
+        <div class="current-schedule-time" *ngIf="item.stateOccupancy === 2"><span class="label-primary-blue">{{'LIBRARIES.OPENED' | translate}}</span> <span class="label-black"> - {{'LIBRARIES.UNTIL' | translate}} {{item.closingTime}}</span></div>
+        <div class="current-schedule-time label-soft-red" *ngIf="item.stateOccupancy === null || item.stateOccupancy === 3">{{item.timetable?.today}}</div>
+        <div class="distance-library">
+            <ion-icon class="icon-library" name="pin"></ion-icon>
+            <ion-label>{{item.distance?.distance}}{{item.distance?.type}}</ion-label>
+        </div>
+        <div class="progressbar-ocupancy-rate">
+          <ion-icon class="icon-library icon-occupancy" name="people"></ion-icon>
+          <app-progress-bar *ngIf="item.occupancyRate != null" class="progress-rate" [primaryColor]="item.colorOccupancy" [secondaryColor]="'#E6E6E6'"
+          [percentaje]="item.occupancyRate + '%'" [heightProgressBar]="'6px'">
+          </app-progress-bar>
+          <app-progress-bar *ngIf="item.occupancyRate == null" class="progress-rate" [primaryColor]="item.colorOccupancy" [secondaryColor]="'#E6E6E6'"
+          [percentaje]="'0%'" [heightProgressBar]="'6px'">
+          </app-progress-bar>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div *ngIf="errorNoResults">
+    <app-errors [error]="errorNoResults"></app-errors>
+  </div>
+</ion-content>

@@ -1,0 +1,89 @@
+// Copiado de libraries para fase 1
+.content-schools {
+    --background: var(--ion-color-background-card);
+}
+
+.subcontent-libraries {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-library {
+    width: 45%;
+    margin: 2.5%;
+    // height: 30%;
+    background-color: white;
+}
+.img-card-library {
+    position: relative;
+    height: 100px;
+    // max-height: 40%;
+    }
+
+.img-oppacity {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 64, 101, 0.3);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    }
+    
+.img-library {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+.info-library {
+    padding: 10px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    min-height: 75px;
+    background: white;
+}
+    
+.progressbar-ocupancy-rate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon-library {
+    width: 15%;
+}
+.progress-rate {
+    width: 80%;
+}
+
+.current-schedule-time {
+    font-weight: 600;
+}
+
+.label-soft-red {
+    color: #F45A71
+}
+
+.label-soft-grey {
+    color: var(--ion-color-text-card);
+}
+
+.label-primary-blue {
+    color: var(--ion-color-primary);
+}
+
+.label-black {
+    color: #707070;
+}
+
+.searchbar-input.sc-ion-searchbar-md{background-color: white!important;}

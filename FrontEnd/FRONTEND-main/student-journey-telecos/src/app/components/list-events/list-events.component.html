@@ -1,0 +1,117 @@
+<div *ngIf="!viewAll">
+  <ion-row class="header-events">
+    <ion-col size="8">
+      <div class="header-events-title subtitle-g black">{{ 'EVENTS.TODAY' | translate }}, {{ todayDate | date:'longDate' : '' : translate.currentLang }}</div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="more see-all blue" [routerLink]="['/pages/home/events']" [queryParams]="{back: true}">{{ 'EVENTS.VIEW_ALL' | translate }}</div>
+    </ion-col>
+
+  </ion-row>
+  
+  <!-- <div *ngIf="!eventsToday.length">
+    <ion-row *ngFor="let number of [0,1]" class="card-event">
+      <ion-col class="event-hours ion-align-self-center" size="3">
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-col>
+      <ion-col class="event-title ion-align-self-center">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-col>
+    </ion-row>
+  </div> -->
+  <div *ngIf="eventsToday.length">
+    <ion-row *ngFor="let event of eventsToday" class="card-event" [routerLink]="['/pages/home/events', event?.idAPI]" [queryParams]="backPage">
+      <ion-col class="event-hours ion-align-self-center" size="3">
+        <p class="subtitle-m black">{{ event?.startDate | date:'HH:mm' }}</p>
+        <p class="primary-text-s black">{{ event?.endDate | date:'HH:mm' }}</p>
+      </ion-col>
+      <ion-col class="event-title ion-align-self-center primary-text-m black">
+          {{truncate(event?.title,45) }}
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div *ngIf="!eventsInRange.length && !eventsToday.length && !this.errorEvents">
+    <ion-row *ngFor="let number of [0,1]" class="card-event">
+      <ion-col class="event-hours range ion-align-self-center" size="3">
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-col>
+      <ion-col class="event-title ion-align-self-center">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div *ngIf="eventsInRange.length && !this.errorEvents">
+    <ion-row *ngFor="let event of eventsInRange" class="card-event" [routerLink]="['/pages/home/events', event?.idAPI]" [queryParams]="backPage">
+      <ion-col class="event-hours range ion-align-self-center" size="3">
+        <p class="date-range subtitle-m black">{{ event?.startDate | date:'dd LLL' : '' : translate.currentLang }}-{{ event?.endDate | date:'dd LLL' : '' : translate.currentLang }}</p>
+        <p class="hour-range primary-text-s black">{{ event?.startDate | date:'HH:mm' }}-{{ event?.endDate | date:'HH:mm' }}</p>
+      </ion-col>
+      <ion-col class="event-title ion-align-self-center primary-text-m black">
+          {{truncate(event?.title,90) }}
+      </ion-col>
+    </ion-row>
+  </div>
+
+</div>
+<div *ngIf="viewAll">
+  <div *ngIf="!eventsForDay.length && !this.errorEvents">
+    <div *ngFor="let number of [0,1]">
+      <ion-row class="header-events">
+        <ion-col size="8">
+          <div class="header-events-title"><ion-skeleton-text animated></ion-skeleton-text></div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="card-event">
+        <ion-col class="event-hours ion-align-self-center" size="3">
+          <ion-skeleton-text animated></ion-skeleton-text>
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-col>
+        <ion-col class="event-title ion-align-self-center">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="card-event">
+        <ion-col class="event-hours range ion-align-self-center" size="3">
+          <ion-skeleton-text animated></ion-skeleton-text>
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-col>
+        <ion-col class="event-title ion-align-self-center">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <div *ngIf="eventsForDay.length && !this.errorEvents">
+    <div *ngFor="let day of eventsForDay" id="{{ day.day | date:'dd-MMMM-yyyy' }}">
+        <ion-row class="header-events">
+          <ion-col size="8">
+            <div class="header-events-title subtitle-g black">{{ day.day | date: 'longDate' : '' : translate.currentLang }}</div>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let event of day?.eventsToday" class="card-event" [routerLink]="['/pages/home/events', event?.idAPI]" [queryParams]="backPage">
+          <ion-col class="event-hours ion-align-self-center" size="3">
+            <p class="subtitle-m black">{{ event?.startDate | date:'HH:mm' }}</p>
+            <p class="primary-text-s black">{{ event?.endDate | date:'HH:mm' }}</p>
+          </ion-col>
+          <ion-col class="event-title ion-align-self-center rimary-text-m black">
+              {{truncate(event?.title,65) }}
+          </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let event of day?.eventsInRange" class="card-event" [routerLink]="['/pages/home/events', event?.idAPI]" [queryParams]="backPage">
+          <ion-col class="event-hours range ion-align-self-center" size="3">
+            <p class="subtitle-m black">{{ event?.startDate | date:'dd LLL' : '' : translate.currentLang }}-{{ event?.endDate | date:'dd LLL' : '' : translate.currentLang }}</p>
+            <p class="primary-text-s black">{{ event?.startDate | date:'HH:mm' }}-{{ event?.endDate | date:'HH:mm' }}</p>
+          </ion-col>
+          <ion-col class="event-title ion-align-self-center rimary-text-m black">
+              {{truncate(event?.title,65) }}
+          </ion-col>
+        </ion-row>
+      </div>
+  </div>
+</div>
+<div *ngIf="errorEvents" class="errors">
+  <app-errors [error]="errorEvents"></app-errors>
+</div>

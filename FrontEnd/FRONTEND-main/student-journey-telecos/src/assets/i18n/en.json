@@ -1,0 +1,251 @@
+{
+  "COMPONENTS": {
+    "SIDEBAR": {
+      "LOGIN": "Log in",
+      "LOGOUT": "Logout",
+      "ITEM1": "Home",
+      "ITEM2": "Course guide",
+      "ITEM3": "Enrolment support",
+      "ITEM4": "Grants and scholarships",
+      "ITEM5": "Libraries",
+      "ITEM6": "Maps",
+      "ITEM7": "News",
+      "ITEM8": "Events calendar",
+      "ITEM9": "What is the UPC like?",
+      "CONFIG": "Settings",
+      "PERSONAL": "Your space",
+      "STUDENT_SUPPORT": "Student support",
+      "INSTITUTONIAL": "The UPC today"
+    }
+  },
+  "HOME": {
+    "PUBLIC": {
+      "TAB1": {
+        "TITLE": "NEWS"
+      },
+      "TAB2": {
+        "TITLE": "EVENTS CALENDAR"
+      },
+      "SLIDER": {
+        "ITEM1": "Libraries",
+        "ITEM2": "Maps",
+        "ITEM3": "Grants"
+      }
+    },
+    "NAME_APP": "UPC Students"
+  },
+  "NEWS": {
+    "TITLE": "News",
+    "EXTERNAL_LINK": "External link",
+    "LANGUAGE_ALERT": "News items are displayed in the original language."
+  },
+  "EVENTS": {
+    "TITLE": "Events calendar",
+    "VIEW_ALL": "SEE ALL",
+    "TODAY": "Today",
+    "LANGUAGE_ALERT": "Events are displayed in the original language.",
+    "EVENT_DETAIL": {
+      "WHEN": "When",
+      "ORGANIZED": "Organised by",
+      "LOCATION": "Location",
+      "WHERE": "Where",
+      "WEB": "Website",
+      "EXTERNAL_LINK": "External link",
+      "ADD_TO_CALENDAR": "Add to your calendar",
+      "TO": "to",
+      "FROM": "from",
+      "FROM_UPPER": "From"
+    },
+    "CALENDAR": {
+      "TITLE": "Events "
+    },
+    "NO_EVENTS": "There are no events on this date."
+  },
+  "LIBRARIES": {
+    "TITLE": "Libraries",
+    "SEARCH": "Search...",
+    "OPENED": "Open",
+    "OPEN_AT": "Opens at",
+    "CLOSED": "Closed",
+    "UNTIL": "Until",
+    "BOOK_ROOM": "Study seat reservation",
+    "CONTACT": "Contact details",
+    "ADDRESS": "Address",
+    "MAIL": "E-mail address",
+    "PHONE": "Tel. number",
+    "WEB": "Website",
+    "STUDENT_LIBRARY": "Online services for students",
+    "FAQ_LIBRARY": "FAQS about services during COVID-19",
+    "INTERNATIONAL": "International student",
+    "DOCTORAND": "Doctoral student library",
+    "DISTANCE": "distance"
+  },
+  "SCHOOLS": {
+    "TITLE": "Maps"
+  },
+  "WORK_IN_PROGRESS": {
+    "TITLE": "Coming soon"
+  },
+  "CONFIGURATION": {
+    "TITLE": "Settings",
+    "LANGUAGES": {
+      "TITLE": "Language",
+      "LANG_ca": "CATALÀ",
+      "LANG_es": "ESPAÑOL",
+      "LANG_en": "ENGLISH"
+    },
+    "SUBTITLES": {
+      "HOME": "Customise your home page",
+      "GENERAL": "General"
+    },
+    "LIST_CONFIG": {
+      "EVENTS": {
+        "TITLE": "Events calendar",
+        "EXPLANATION": "It will be displayed on the home page"
+      }
+    },
+    "COPYRIGHT": "© 2020 All rights reserved",
+    "VERSION": "Version"
+  },
+  "SCHOLARSHIPS": {
+    "TITLE": "Grants and scholarships",
+    "TAB1": "Degrees",
+    "TAB2": "Mobility",
+    "SEARCH": "Search...",
+    "UNTIL": "Until",
+    "FROM": "From",
+    "FROM_THE": "From",
+    "UNDEFINED": "Dates pending",
+    "OPEN_SOON": "Pending",
+    "OPENED": "Call open",
+    "CLOSED": "Call closed",
+    "DETAIL": {
+      "TITLE": "Student financial aid",
+      "GENERAL_INFORMATION": "General information",
+      "REQUIREMENTS": "Requirements",
+      "SCHOLARSHIP": "Grant",
+      "SUBMISSION": "Application",
+      "AWARD": "Award",
+      "MORE_INFORMATION": "More information"
+    },
+    "SUPPORT": "Support",
+    "LANGUAGE_ALERT": "Scholarships are displayed in the original language."
+  },
+  "SCHEDULE_MANAGMENT": {
+    "TITLE": "My timetable",
+    "NO_EVENTS": "There are no events on this date.",
+    "GROUP": "Group",
+    "TEACHER": "Professor",
+    "DATE_TIME": "Date and time",
+    "LANGUAGE": "Language",
+    "TYPE": "Type",
+    "CLASSROOM": "Classroom",
+    "CAMPUS": "Campus and building",
+    "OBSERVATIONS": "Comments",
+    "TYPE_ACTIVITY_T": "Theory",
+    "TYPE_ACTIVITY_L": "Laboratories",
+    "TYPE_ACTIVITY_P": "Problems",
+    "TYPE_ACTIVITY_EP": "Exam",
+    "TYPE_ACTIVITY_EF": "Exam",
+    "TYPE_ACTIVITY_LONG_EP": "Partial Exam",
+    "TYPE_ACTIVITY_LONG_EF": "Final Exam",
+    "DATA_UPDATED": "Data updated on",
+    "AT": "at",
+    "TODAY": "Today"
+  },
+  "NOTE_CONSULTATION": {
+    "TITLE": "Check your marks",
+    "NOTE_DETAIL": "Mark detail",
+    "NOTE_DEF": "Mark Def.",
+    "NOTE_PROF": "Mark Tea.",
+    "ACTIVITY": "Activity",
+    "MANDATORY": "Compulsory",
+    "OPTIONAL": "Optional",
+    "CALL": "Call",
+    "COURSE": "Semester",
+    "CREDITS": "Credits",
+    "ABBREVIATIONS": "Abbreviations",
+    "CODE": "Code",
+    "SEE_ALL": "See all",
+    "NO_RESUTS_SEARCH_MANDATORY": "No compulsory subjects with this name were found.",
+    "NO_RESUTS_SEARCH_OPTIONAL": "No optional subjects with this name were found.",
+    "TEACHER_NOTE": "Professor’s mark",
+    "NO_NOTES": "This subject <b>has no activity</b> in Check your marks.",
+    "NO_FILE": "You do not have any open files available",
+    "TEXT_NOTE_S": "Suspense",
+    "TEXT_NOTE_A": "Approved",
+    "TEXT_NOTE_N": "Notable",
+    "TEXT_NOTE_E": "Excellent",
+    "TEXT_NOTE_MH": "Honors",
+    "TEXT_NOTE_NP": "Not presented",
+    "TEXT_NOTE_C": "Validated"
+  },
+  "STUDENT_CARD": {
+    "TITLE": "License UPC",
+    "TITLE_DETAIL": "License UPC",
+    "EXPIRES": "Expires",
+    "CODE": "Code PAN",
+    "AT": "at",
+    "DATA_UPDATED": "Data updated on"
+  },
+  "ANNOUNCEMENTS": {
+    "TITLE": "Your notifications",
+    "TITLE_DETAIL": "Notice",
+    "NEW_ANNOUNCEMENT": "YOUR NOTIFICATIONS",
+    "SEE_ALL": "View all",
+    "SINCE_HOURS": "{{hours}} hours ago",
+    "SINCE_DAYS": "{{days}} days ago",
+    "YESTERDAY": "Yesterday",
+    "MORE_INFO": "More information",
+    "SCHEDULE_DATE": "Class schedule change - <b>{{name}}</b><br />Class from day {{oldDate}} has changed to the day {{newDate}}.",
+    "SCHEDULE_ROOM": "Classroom change - <b>{{name}}</b><br />Class from day {{date}} has moved to classroom {{room}}.",
+    "SCHEDULE_CANCELLATION": "Class <b>{{name}}</b> of the day {{day}} from {{from}} to {{to}} has been cancelled.",
+    "GRADE_FINAL": "The mark for the activity {{activity}} of the subject {{subject}} has been published.",
+    "DATE": "Date",
+    "SCHOOL": "School",
+    "DOWNLOAD": "DOWNLOAD PDF",
+    "NO_ANNOUNCEMENT": "There are no new notifications"
+  },
+  "ERRORS": {
+    "INTERNET": "It seems to be a problem with your <b>internet connection</b>.",
+    "NOT_FOUND": "<b>Sorry,</b> we could not find what you were looking for.",
+    "INTERNAL_SERVER_ERROR": "There seems to be a problem with <b>the server</b>.</br>Try again later.",
+    "NO_RESULTS": "Sorry, we could not find what you were looking for",
+    "GENERIC": "Ups! Something went wrong",
+    "SERVER": "There seems to be a problem with the service",
+    "SCHEDULE": "This app is evolving. The schedule service is expected to be incorporated soon.",
+    "MODAL_CLOSE": "Return",
+    "NOT_GRADES": "We are sorry. This subject has no enabled the grades system.",
+    "NOT_SUBJECT": "We are sorry. We have not found grades for this subject.",
+    "PERMISSION_DENIED": "We are sorry. We need your permission to access the university’s corporate services",
+    "WIP": "This feature will be available soon",
+    "USER_NOT_FOUND": "User not found / Invalid or expired token",
+    "SITE": "It seems to be a problem with the site. Try again later",
+    "NO_SCHEDULE": "There are no events to show.",
+    "NO_EVENTS": "There are no events to show.",
+    "SCHEDULE_NOT_ENROLLMENT": "Your schedule is not available",
+    "RESTRICTED": "Access to this part is restricted to bachelor's and master's degree students",
+    "GRADES_NOT_ENROLLMENT": "You do not have any subject enrolled",
+    "INCORRECT_CEDENTIALS": "ERROR: Incorrect credentials or expired password.",
+    "UNDER_MAINTENANCE": "This application is <b>under maintenance</b>. We will hope that it works again soon. Try again later."
+  },
+  "LOG_IN": {
+    "TITLE": "UPC App",
+    "USER": "User",
+    "PASSWORD": "Password",
+    "RESET_PASS": "Forgot your password?",
+    "ENTER": "Login",
+    "UPC": "© <b>UPC</b> Universitat Politècnica de Catalunya · BarcelonaTech"
+  },
+  "ALERT_UPDATE": {
+    "HEADER": "New Version",
+    "MESSAGES": {
+      "CRITICAL": "Version {{version}} is available on the store. Please update the app to continue using it.",
+      "ANNOYING": "Version <strong>{{version}}</strong> is available on the store. We recommend you to update to the latest version."
+    },
+    "BUTTONS": {
+      "UPDATE": "Update",
+      "NOT_NOW": "Not now"
+    }
+  }
+}

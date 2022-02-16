@@ -1,0 +1,148 @@
+
+.background-blue {
+  background-color: #20a9da;
+
+  .div-image-logo {
+    // display: flex;
+  }
+
+  .logo-upc {
+    margin-left: 10px;
+    margin-top: 8px;
+    width: 49%;
+  }
+}
+
+.grid-profile {
+  display: flex;
+  flex-wrap: wrap;
+  --ion-grid-padding: 10px;
+
+}
+
+.cont-data {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: 5px;
+  
+  .cont-data-text {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    color: white;
+  
+      .name {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.1em;
+      }
+  
+      .role {
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 15px;
+      }
+  
+      .center {
+        font-size: 14px;
+        font-weight: bold;
+      }
+  
+      .code {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+  
+    }
+
+    
+    .div-profile-pic {
+      margin-right: 10px;
+    }
+
+  }
+
+  .card-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+
+    .card-data {
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+
+      .card-data-top {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card-data-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .card-labels {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .expires-labels {
+        margin-right: 10px;
+      }
+    }
+  }
+
+
+.dataInline{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.cont-barcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+ion-card {
+  --background: white !important;
+  box-shadow: transparent !important;
+}
+
+
+.lastUpdateDate {
+  padding: 3px;
+  background-color: var(--ion-color-background-card-aviso);
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.lastUpdateDate-ios {
+  padding: 3px;
+  background-color: var(--ion-color-background-card-aviso);
+  position: fixed;
+  width: 100%;
+  bottom: calc(var(--ion-safe-area-bottom, 0) + 50px);
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+

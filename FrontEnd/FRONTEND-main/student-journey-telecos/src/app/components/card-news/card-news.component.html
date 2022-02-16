@@ -1,0 +1,16 @@
+
+  <div class="card-news-img">
+    <div class="card-skeleton-img" *ngIf="loading">
+        <ion-skeleton-text animated></ion-skeleton-text>
+    </div>
+    <img *ngIf="newsItem.image !== null" [hidden]="loading" class="card-img" [src]="newsItem.image" (load)="loading = false" alt="">
+    <img *ngIf="newsItem.image === null" class="card-img" (load)="loading = false" src="../../../../assets/images/noticia-sinimg.jpg" alt="">
+  </div>
+  <div class="card-info">
+    <div class="secondary-text gray-disabled">
+    {{ newsItem?.publishDate | date: 'shortDate' : '' : translateService.currentLang }}
+    </div>
+    <div class="card-news-title truncate primary-text-m black">
+        {{newsItem?.title}}
+    </div>
+  </div>

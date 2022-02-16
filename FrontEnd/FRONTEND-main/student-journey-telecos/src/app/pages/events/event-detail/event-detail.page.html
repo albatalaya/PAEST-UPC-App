@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" text="" [defaultHref]="backPage"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'EVENTS.TITLE' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="event-detail ion-padding" padding="true" *ngIf="eventObject">
+    <p class="title-g black">{{ eventObject?.title }}</p>
+    <p class="description-event">{{ eventObject?.description }}</p>
+    <p class="literal-text subtitle-g black">{{ 'EVENTS.EVENT_DETAIL.WHEN' | translate }}</p>
+    <p *ngIf="isEventRange(eventObject?.startDate, eventObject?.endDate)" class="link-g blue">{{ 'EVENTS.EVENT_DETAIL.FROM_UPPER' | translate }} {{ eventObject?.startDate | date: 'shortDate' : '' : translate.currentLang}} {{ 'EVENTS.EVENT_DETAIL.TO' | translate }} {{ eventObject?.endDate | date: 'shortDate' : '' : translate.currentLang}} {{ 'EVENTS.EVENT_DETAIL.FROM' | translate }} {{ eventObject?.startDate | date: 'HH:mm' }}h {{ 'EVENTS.EVENT_DETAIL.TO' | translate }} {{ eventObject?.endDate | date: 'HH:mm'}}h</p>
+    <p *ngIf="!isEventRange(eventObject?.startDate, eventObject?.endDate)" class="link-g blue">{{ 'EVENTS.EVENT_DETAIL.FROM_UPPER' | translate }} {{ eventObject?.startDate | date: 'shortDate' : '' : translate.currentLang}} {{ 'EVENTS.EVENT_DETAIL.FROM' | translate }} {{ eventObject?.startDate | date: 'HH:mm' }}h {{ 'EVENTS.EVENT_DETAIL.TO' | translate }} {{ eventObject?.endDate | date: 'HH:mm'}}h</p>
+    <hr class="my-split-line">
+    <p class="literal-text subtitle-g black">{{ 'EVENTS.EVENT_DETAIL.ORGANIZED' | translate }}</p>
+    <p class="primary-text-g black">{{ eventObject?.organizedBy }}</p>
+    <hr class="my-split-line">
+    <p class="literal-text subtitle-g black">{{ 'EVENTS.EVENT_DETAIL.LOCATION' | translate }}</p>
+    <p>{{ eventObject?.location }}</p>
+    <hr class="my-split-line">
+    <p class="literal-text subtitle-g black">{{ 'EVENTS.EVENT_DETAIL.WHERE' | translate }}</p>
+    <p [innerHTML]="eventObject?.on?.data"></p>
+    <hr class="my-split-line">
+    <p class="literal-text subtitle-g black">{{ 'EVENTS.EVENT_DETAIL.WEB' | translate }}</p>
+    <p class="link link-g blue" (click)="goToEnlaceExtern()">{{ 'EVENTS.EVENT_DETAIL.EXTERNAL_LINK' | translate }}</p>
+    <hr class="my-split-line">
+    
+    <ion-button class="add-calendar-button" shape="round" expand="block" color="primary"  mode="ios" (click)="openAddCal()">{{ 'EVENTS.EVENT_DETAIL.ADD_TO_CALENDAR' | translate }}</ion-button>
+  </div>
+  <!--<app-errors *ngIf="!eventObject"></app-errors>-->
+  <div *ngIf="!eventObject">
+    <app-errors [error]="{}"></app-errors>
+  </div>
+</ion-content>

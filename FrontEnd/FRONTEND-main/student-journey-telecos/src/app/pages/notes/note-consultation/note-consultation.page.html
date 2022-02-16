@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{'NOTE_CONSULTATION.TITLE' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fondo">
+    <div *ngIf="!grades && !errorMatricula">
+        <ion-skeleton-text animated style="height: 20px; margin-top: 15px; width: 70%; margin-left: 5%;"></ion-skeleton-text>
+        <ion-row style="width: 100%; margin-top: 15px">
+          <div style="width: 100%">
+            <div style="margin-left: 3%;display: inline-block; width: 30%">
+              <ion-skeleton-text animated></ion-skeleton-text>
+            </div>
+            <div style="display: inline-block; width: 30%; margin-left: 3%">
+              <ion-skeleton-text animated></ion-skeleton-text>
+            </div>
+            <div style="margin-left: 3%;display: inline-block; width: 30%">
+              <ion-skeleton-text animated></ion-skeleton-text>
+            </div>
+          </div>
+        </ion-row>
+        <div style="width: 100%" *ngFor="let item of [0,1]">
+          <ion-skeleton-text animated style="margin-top: 20px; width: 20%; margin-left: 40%;"></ion-skeleton-text>
+          <ion-skeleton-text  animated style="height: 30px; margin-top: 20px; width: 80%; margin-left: 10%;" *ngFor="let item of [0,1,2,3]"></ion-skeleton-text>
+        </div>
+    </div>
+    <div *ngIf="grades && grades.length === 0 && gradesSinFiltrar.length > 0">
+      <div class="info">
+        <img src="../../../../assets/images/error/sin-expediente.png"/>
+        <br />
+        <br />
+        <br />
+        <div class="div-text">
+          <span class="text">{{'NOTE_CONSULTATION.NO_FILE' | translate}}</span>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="errorMatricula">
+      <app-errors [error]="errorMatricula"></app-errors>
+    </div>
+
+
+    <div *ngIf="grades && grades.length === 1" class="accordion">
+      <div class="accordion-content">
+        <ion-label class="label-title-category title-m black">
+          {{grades[0].name}}
+        </ion-label>
+      </div>
+      <div>
+        <app-grade-detail-list [grade]="grades[0]"></app-grade-detail-list>
+      </div>
+    </div>
+
+
+    <div *ngIf="grades && grades.length > 1">
+      <a detail-none class="accordion" *ngFor="let grade of grades">
+        <div class="accordion-content" (click)="expandItem(grade.id)">
+          <ion-label class="label-title-category title-m black">
+            {{grade.name}}
+          </ion-label>
+          <ion-icon [name]="!grade.expanded ? 'chevron-down-outline' :'chevron-up-outline'" item-end></ion-icon>
+        </div>
+        <app-expandable [expandHeight]="1000" [expanded]="grade?.expanded">
+          <app-grade-detail-list [expand]="true" [grade]="grade"></app-grade-detail-list>
+        </app-expandable>
+      </a>
+    </div>
+  </div>
+</ion-content>

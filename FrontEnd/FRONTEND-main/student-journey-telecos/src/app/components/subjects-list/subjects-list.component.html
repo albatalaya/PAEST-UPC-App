@@ -1,0 +1,52 @@
+<div class="detail-subjects">
+    <a detail-none class="accordion" *ngFor="let subject of subjects">
+      <div class="accordion-content" (click)="expandItem(subject.codiUPC)">
+        <div class="nombre">
+          <ion-label class="label-title-category subtitle-m black">
+            {{subject.name}}
+          </ion-label>
+        </div>
+        <div>
+          <ion-label class="label-title-last-note subtitle-m black" [ngClass]="{suspes: subject.convocatories[0].nota < 5}">
+           {{(subject.convocatories[0].nota ? subject.convocatories[0].nota + ' ' + subject.convocatories[0].notaText : '--')}}
+          </ion-label>
+          <ion-icon [name]="!subject.expanded ? 'chevron-down-outline' :'chevron-up-outline'" item-end></ion-icon>
+        </div>
+      </div>
+      <app-expandable [expandHeight]="1000" [expanded]="subject.expanded">
+        <div class="convocatories">
+          <div class="cabecera-titles">
+            <div class="data">
+              <span class="subtitle-m black">{{'NOTE_CONSULTATION.CODE' | translate}} UPC</span>
+              <span class="secondary-text gray-disabled">{{subject.codiUPC}}</span>
+            </div>
+            <div class="data">
+                <span class="subtitle-m black">{{'NOTE_CONSULTATION.ABBREVIATIONS' | translate}}</span>
+                <span class="secondary-text gray-disabled">{{subject.shortName}}</span>
+            </div>
+            <div class="data">
+                <span class="subtitle-m black">{{'NOTE_CONSULTATION.CREDITS' | translate}}</span>
+                <span class="secondary-text gray-disabled">{{subject.credits}}</span>
+            </div>
+          </div>
+
+          <div class="separacion"><hr /></div>
+
+          <div class="convocatories-info">
+            <div class="data">
+              <span>{{'NOTE_CONSULTATION.COURSE' | translate}}</span>
+              <span *ngFor="let convocatoria of subject.convocatories" [ngClass]="{suspes: convocatoria.nota < 5}"><b class="numConvocatoria">{{convocatoria.numConvocatoria}}</b> {{convocatoria.curs}}</span>
+            </div>
+            <div class="data">
+              <span>{{'NOTE_CONSULTATION.NOTE_PROF' | translate}}</span>
+              <span *ngFor="let convocatoria of subject.convocatories" [ngClass]="{suspes: convocatoria.nota < 5}">{{(convocatoria.nota ? convocatoria.notaProfessor + ' ' + (('NOTE_CONSULTATION.TEXT_NOTE_' + convocatoria.notaTextProfessor) | translate) : '--')}}</span>
+            </div>
+            <div class="data">
+              <span>{{'NOTE_CONSULTATION.NOTE_DEF' | translate}}</span>
+              <span *ngFor="let convocatoria of subject.convocatories" [ngClass]="{suspes: convocatoria.nota < 5}">{{(convocatoria.nota ? convocatoria.nota + ' ' + (('NOTE_CONSULTATION.TEXT_NOTE_' + convocatoria.notaText) | translate) : '--')}}</span>
+            </div>
+          </div>
+        </div>
+      </app-expandable>
+    </a>
+  </div>

@@ -1,0 +1,69 @@
+{
+    "announcements": [],
+    "role": "Student",
+    "status": "ACTIVE",
+    "_id": "60797909d601cb0013d373b1",
+    "username": "xxx",
+    "settings": {
+      "_id": "5faad7a8954b71001ae9990a",
+      "language": "ca"
+    },
+    "idGauss": 1262851,
+    "qr": "QN0DTGLUHL0YZ4",
+    "comonName": "noemi.garcia",
+    "document": "XXXXXXXXX",
+    "documentType": {
+      "_id": "6005a6b527839e4da640b46f",
+      "id": 1,
+      "descripcio": "DNI"
+    },
+    "name": "NOEMI",
+    "firstName": "NOEMI",
+    "lastName": "GARCIA",
+    "surname1": "GARCIA",
+    "surname2": "MUÑOZ",
+    "uePerfil": [
+      {
+        "campusDescripcio": "CAMPUS TERRASSA",
+        "campusId": "TR",
+        "edificiDescripcio": "EDIFICI TR5",
+        "edificiId": "TR5",
+        "estatsPerfil": "ALTA",
+        "estatsPerfilId": "010",
+        "idOrigen": "3074986",
+        "identitatEst": {
+          "dataTramit": "2020-09-01",
+          "mobilitat": false,
+          "estat": "MATRICULAT",
+          "estatId": "10",
+          "ueResponsableId": "205",
+          "ueResponsableDescripcio": "ES ENG.INDUST.,AEROESP.,I AUDIO TERRASSA"
+        },
+        "organitzacioId": "UPC",
+        "perfilDescripcio": "Estudiantat",
+        "perfilId": "EST",
+        "sisOrigen": "BDPRISMA",
+        "suborganitzacioId": "UPC",
+        "ueAcronim": "ESEIAAT",
+        "ueDescripcio": "ES ENG.INDUST.,AEROESP.,I AUDIO TERRASSA",
+        "ueId": "205"
+      }
+    ],
+    "email": "noemi.garcia@estudiantat.upc.edu",
+    "card": [
+      {
+        "estat": "ACT",
+        "tipus": "D",
+        "pan": "YYYYYYYYYYYYYYYY",
+        "codiBarres": "2077751459",
+        "rfid": "769D01BE",
+        "dataCaducitat": "2027-10-01"
+      }
+    ],
+    "createdAt": "2021-04-16T11:46:17.807Z",
+    "updatedAt": "2021-04-19T11:18:13.880Z",
+    "__v": 0,
+    "idFirebase": [],
+    "fullName": "NOEMI GARCIA",
+    "id": "60797909d601cb0013d373b1"
+  }

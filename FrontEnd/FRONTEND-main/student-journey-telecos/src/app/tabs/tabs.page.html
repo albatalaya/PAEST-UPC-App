@@ -1,0 +1,20 @@
+<ion-tabs #tabBar>
+  <ion-tab-bar slot="bottom" *ngIf="user && !hideTabBar">
+    <ion-tab-button tab="home" selected>
+      <ion-icon name="home"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="schedule-management">
+      <ion-icon name="calendar-clear"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="grades">
+      <ion-icon name="create"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="library">
+      <ion-icon name="book"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="schools">
+      <ion-icon name="map"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

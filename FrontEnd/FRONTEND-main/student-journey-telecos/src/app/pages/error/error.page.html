@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button *ngIf="backPage" mode="md" text="" [defaultHref]="backPage"></ion-back-button>
+    <ion-title></ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <app-errors [statusCode]=statusCode></app-errors> -->
+  <div class="container">
+    <app-errors [error]="errorCodeApp"></app-errors>
+  </div>
+</ion-content>

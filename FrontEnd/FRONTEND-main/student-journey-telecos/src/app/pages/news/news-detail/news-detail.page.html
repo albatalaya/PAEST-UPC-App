@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" text="" [defaultHref]="backPage"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'NEWS.TITLE' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!newsObject">
+    <div class="img-detail-news">
+      <ion-skeleton-text animated style="height: 200px;"></ion-skeleton-text>
+      <div class="footer-img-div">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </div>
+    </div>
+    <div class="ion-padding">
+      <div class="title-news">
+        <ion-skeleton-text animated style="height: 50px;"></ion-skeleton-text>
+      </div>
+      <div class="description-news">
+        <ion-skeleton-text animated style="height: 100px;"></ion-skeleton-text>
+      </div>
+      <div class="html-content-news">
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="newsObject">
+    <div class="img-detail-news">
+      <img *ngIf="newsObject?.image != null" [src]="newsObject?.image" alt="">
+      <img *ngIf="newsObject?.image === null" src="../../../../assets/images/noticia-sinimg.jpg" alt="">
+      <div class="footer-img-div gray-disabled secondary-text">
+        {{ newsObject?.publishDate | date: 'longDate' : '' : translateService.currentLang }}
+      </div>
+    </div>
+    <div class="ion-padding">
+      <div class="title-news title-g black">
+        {{newsObject?.title}}
+      </div>
+      <div *ngIf="newsObject.description" class="description-news subtitle-g black">
+        {{newsObject?.description}}
+      </div>
+      <div *ngIf="newsObject.content" class="html-content-news primary-text-g black" [innerHTML]="newsObject?.content.data">
+  
+      </div>
+      <div *ngIf="newsObject.remoteUrl" class="remoteUrl" (click)="goToExternalLink()">
+        <p><b>{{'NEWS.EXTERNAL_LINK' | translate}}</b></p>
+        <span class="external-link">{{newsObject?.remoteUrl}}</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

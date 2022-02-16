@@ -1,0 +1,283 @@
+.current-day-list {
+    color: var(--ion-color-primary);
+    font-weight: bold;
+    font-size: 8px;
+    position: relative;
+    top: -1px;
+    margin-left: 3px;
+}
+
+.lastUpdateDate {
+    padding: 3px;
+    background-color: var(--ion-color-background-card-aviso);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 1000;
+}
+
+.reset-day{
+    position: fixed;
+    bottom: 6%;
+    right: 25px;
+    z-index: 100;
+    background: var(--ion-color-primary);
+    border-radius: 78px 78px 78px 78px;
+    -moz-border-radius: 78px 78px 78px 78px;
+    -webkit-border-radius: 78px 78px 78px 78px;
+    border: 0px solid #000000;
+    color: white;
+    padding: 7px;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    fa-icon {
+        margin-right: 5px;
+    }
+}
+
+.reset-day-ios{
+    bottom: calc(var(--ion-safe-area-bottom, 0) + 100px)
+}
+
+.lastUpdateDate-ios {
+    padding: 3px;
+    background-color: var(--ion-color-background-card-aviso);
+    position: fixed;
+    width: 100%;
+    bottom: calc(var(--ion-safe-area-bottom, 0) + 50px)
+}
+
+
+
+.title-calendar {
+    // top: 52px;
+    // position: fixed;
+    text-align: left;
+    width: 60%;
+    z-index: 100;
+    // background-color: white;
+    display: inline-block;
+    left: -18px;
+    position: relative;
+
+    ion-icon.md.hydrated {
+      margin-top: 2px;
+      margin-left: 12px;
+      font-size: 20px;
+    }
+
+    .flecha{
+        margin-left: 15px;
+    }
+}
+
+#month-calendar{
+    height: auto;
+}
+
+.header-cal {
+    height: 0px;
+    // height: 8%;
+    // position: fixed;
+    transition: height 0.3s ease;
+}
+
+.header-cal.active {
+    height: auto;
+    // height: 43%;
+    transition: height 0.3s ease;
+
+}
+
+.toolbar-cal {
+    padding-top: 0;
+    // margin-top: -1%;
+    height: inherit;
+    -webkit-box-shadow: 0 6px 6px -6px #222;
+    -moz-box-shadow: 0 6px 6px -6px #222;
+    box-shadow: 0 6px 6px -6px #222;
+}
+
+.toolbar-cal.active {
+    position: fixed;
+}
+
+.iconos-calendar {
+    // top: 52px;
+    // position: fixed;
+    text-align: right;
+    width: 39%;
+    z-index: 100;
+    // background-color: white;
+    display: inline-block;
+
+    ion-button {
+        width: 30px;
+    }
+}
+
+.info span{
+    margin-right: 10px;
+}
+
+.acatividad-tipus {
+
+    div {
+        text-overflow: ellipsis;
+        overflow: hidden; 
+        height: 1.2em; 
+        white-space: nowrap;
+    }
+
+    width: 100%;
+}
+
+span.tipoActividad {
+    font-size: 12px;
+}
+
+.calendar-event-inner-week{
+    width: calc(100% + 20px);
+    left: -10px;
+    top: -10px;
+    height: 100%;
+    position: relative;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.contenido{
+    height: 97%;
+}
+
+.contenido-list{
+    margin-bottom: 7%;
+}
+
+.contenido.active{
+    position: relative;
+    top: 350px;
+}
+
+.calendar-event-inner-day-view{
+    text-align: left;
+    height: 100%;
+    position: relative;
+    top: -10px;
+    padding-left: 10px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.separacion{
+    padding-top: 10px;
+}
+
+.calendar-event-inner-day{
+    height: 100%;
+    left: 10px;
+    position: relative;
+}
+
+.current-day{
+    color: var(--ion-color-primary);
+    font-weight: bold;
+}
+
+.iconos-calendar ion-icon {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    top: 10px;
+    margin-left: 15px;
+}
+
+.dot-icon{
+    position: relative;
+    top: -2px;
+    font-size: 5px;
+}
+
+.noEvents{
+    background-color: var(--ion-color-background-card-aviso);
+    margin: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+.texto-profesor{
+    margin-top: 10px;
+
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    height: 1.2em; 
+    white-space: nowrap;
+
+    width: 90%;
+}
+
+.actividad-hours{
+    text-align: center;
+
+   .hour-range-finaliza{
+        margin-top: -10px;
+    }
+}
+
+.actividad-info{
+    font-size: 17px;
+    margin-left: 15px;
+    width: 70%;
+
+    p{
+        margin-top: 0;
+    }
+}
+
+.texto-aula {
+    margin-right: 15px;
+
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    height: 1.2em; 
+    white-space: nowrap;
+
+    max-width: 90%;
+}
+
+.header-events-title {
+    margin: 15px;
+    margin-top: 0px;
+    padding-top: 15px;
+    margin-left: 8px;
+}
+
+
+.info-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80px;
+}
+
+.titulo-actividad {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 90%; 
+    height: 1.2em; 
+    white-space: nowrap;
+}
+
+.card-activitat{
+    margin: 8px;
+}
+
+.day-view-tittle{
+    display: block;
+    margin-left: 21px;
+    position: absolute;
+    bottom: 0px;
+}

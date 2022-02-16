@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{'NOTE_CONSULTATION.NOTE_DETAIL' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="cabecera" *ngIf="!gradeDetail && !errorNoGrades">
+      <ion-skeleton-text animated style="height: 20px; width: 70%; margin-left: 15%;"></ion-skeleton-text>
+      <div style="width: 100%; margin-top: 15px;">
+        <ion-skeleton-text animated style="display: inline-block; width: 25%; margin-left: 20%;"></ion-skeleton-text>
+        <ion-skeleton-text animated style="display: inline-block; width: 25%; margin-left: 5%;"></ion-skeleton-text>
+      </div>
+      <ion-skeleton-text animated style="margin-top: 15px; width: 80%; margin-left: 10%;"></ion-skeleton-text>
+  </div>
+  <div class="cabecera" *ngIf="gradeDetail">
+    <div class="header">
+      <div class="arrow">
+        <ion-icon name="chevron-back-outline" (click)="previous()"></ion-icon>
+      </div>
+      <div>
+        <p class="titulo-actividad title-g blue">{{ gradeDetail.gradeInfoSubject?.gradeTitle }}</p>
+        <div class="info-actividad primary-text-g black">
+          <span>{{ gradeDetail.gradeInfoSubject?.codiUPC }} </span>
+          <span class="grupo-info"><ion-icon name="people-outline"></ion-icon> {{'SCHEDULE_MANAGMENT.GROUP' | translate}}: {{ gradeDetail.gradeInfoSubject?.grup }}</span>
+        </div>
+
+        <p *ngFor="let professor of gradeDetail.gradeInfoSubject?.profesors" class="teacher secondary-text gray-disabled"><ion-icon name="person-outline"></ion-icon> {{(professor.nom + ' ' + professor.cognoms)}}</p>        
+      </div>
+      <div class="arrow">
+        <ion-icon name="chevron-forward-outline" (click)="next()"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!gradeDetail && !errorNoGrades">
+    <div class="notaFinal" style="width: 100%; margin-top: 15px;">
+      <ion-skeleton-text animated style="height: 18; display: inline-block; width: 53%; margin-left: 4%;"></ion-skeleton-text>
+      <ion-skeleton-text animated style="height: 18; display: inline-block; width: 10%; margin-left: 28%;"></ion-skeleton-text>
+    </div>
+    <div style="width: 100%; margin-top: 15px;">
+      <ion-skeleton-text animated style="height: 18; display: inline-block; width: 53%; margin-left: 4%;"></ion-skeleton-text>
+      <ion-skeleton-text animated style="height: 18; display: inline-block; width: 10%; margin-left: 28%;"></ion-skeleton-text>
+    </div>
+    <div style="width: 100%; margin-top: 20px;" *ngFor="let item of [0,1,2,3,4,5]">
+      <ion-skeleton-text animated style="display: inline-block; width: 43%; margin-left: 10%;"></ion-skeleton-text>
+      <ion-skeleton-text animated style="display: inline-block; width: 8%; margin-left: 30%;"></ion-skeleton-text>
+    </div>
+  </div>
+  <div *ngIf="gradeDetail && !errorNoGrades">
+    <div class="notaFinal title-m black" *ngIf="gradeDetail.notaFinal?.qualificacio !== null">
+      <span>{{'NOTE_CONSULTATION.TEACHER_NOTE' | translate}}</span>
+      <span>{{gradeDetail.notaFinal.qualificacio ? (round(gradeDetail.notaFinal.qualificacio)) : '--'}} / {{(gradeDetail.notaFinal.notaMaxima ? gradeDetail.notaFinal.notaMaxima : '--')}}</span>
+    </div>
+
+    <div class="categorias" *ngIf="gradeDetail.categories && gradeDetail.categories.length > 0">
+      <div *ngFor="let categoria of gradeDetail.categories">
+        <div class="nombreCategoria title-m black" (click)="categoria['collapse'] = (categoria['collapse'] !== undefined ? !categoria['collapse'] : false)">
+          <span>{{categoria.nom}}</span>
+          <span>{{(categoria.qualificacio ? ((round(categoria.qualificacio))) : '--')}}</span>
+          <ion-icon *ngIf="(categoria.activities && categoria.activities.length > 0) || (categoria.subcategories && categoria.subcategories.length > 0)" [name]="categoria['collapse'] === undefined || categoria['collapse'] ? 'chevron-down-outline' : 'chevron-up-outline'"></ion-icon>
+        </div>
+
+        <div *ngIf="(categoria['collapse'] === undefined || categoria['collapse'])">
+          <div *ngIf="categoria.activities && categoria.activities.length > 0">
+            <ng-container 
+              [ngTemplateOutlet]="actividades" 
+              [ngTemplateOutletContext]="{actividades:categoria.activities}">
+            </ng-container>
+          </div>
+
+          <div *ngIf="categoria.subcategories && categoria.subcategories.length > 0">
+            <ng-container 
+              [ngTemplateOutlet]="subcategories" 
+              [ngTemplateOutletContext]="{subcategories:categoria.subcategories}">
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="errorNoGrades">
+    <app-errors [error]="errorNoGrades"></app-errors>
+  </div>
+
+</ion-content>
+
+<ng-template #actividades let-actividades='actividades'>
+  <table class="tabla-actividades">
+    <tr class="subtitle-m balck">
+      <th>{{'NOTE_CONSULTATION.ACTIVITY' | translate}}</th>
+      <th>%</th>
+      <th>{{'NOTE_CONSULTATION.NOTE_DEF' | translate}}</th>
+    </tr>
+    <tr *ngFor="let actividad of actividades" class="primary-text-m black">
+      <td>{{actividad.nom}}</td>
+      <td>{{(actividad.ponderacio ? ((actividad.ponderacio * 100) | number : '1.1-1') : '--') }}</td>
+      <td class="subtitle-m balck">{{(actividad.qualificacio ? ((round(actividad.qualificacio))) : '--' )}} / {{(actividad.notaMaxima ? actividad.notaMaxima : '--')}} {{actividad.notaText}}</td>
+    </tr>
+  </table> 
+</ng-template>
+
+<ng-template #subcategories let-subcategories='subcategories'>
+  <div *ngFor="let subcategoria of subcategories">
+    <ng-container 
+        [ngTemplateOutlet]="subcategory" 
+        [ngTemplateOutletContext]="{subcategoria:subcategoria}">
+    </ng-container>
+  </div>
+</ng-template>
+
+<ng-template #subcategory let-subcategoria='subcategoria'>
+    <div class="nombreSubcategoria" (click)="subcategoria['collapse'] = (subcategoria['collapse'] !== undefined ? !subcategoria['collapse'] : false)">
+      <span>{{subcategoria.nom}}</span>
+      <span>{{(subcategoria.ponderacio ? ((subcategoria.ponderacio * 100) | number : '1.1-1') : '--')}} %</span>
+      <span>{{(subcategoria.qualificacio ? ((round(subcategoria.qualificacio))) : '--')}}</span>
+
+      <ion-icon *ngIf="(subcategoria.activities && subcategoria.activities.length > 0) || (subcategoria.subcategories && subcategoria.subcategories.length > 0)" 
+        [name]="categoria['collapse'] === undefined || categoria['collapse'] ? 'chevron-down-outline' : 'chevron-up-outline'"></ion-icon>
+
+    </div>
+
+    <div style="margin-top: 15px; padding-left: 10px;" *ngIf="(subcategoria['collapse'] === undefined || subcategoria['collapse'])">
+      <div *ngIf="subcategoria.activities && subcategoria.activities.length > 0">
+        <ng-container 
+          [ngTemplateOutlet]="actividades" 
+          [ngTemplateOutletContext]="{actividades:subcategoria.activities}">
+        </ng-container>
+      </div>
+  
+      <div *ngIf="subcategoria.subcategories && subcategoria.subcategories.length > 0">
+        <ng-container 
+          [ngTemplateOutlet]="subcategories" 
+          [ngTemplateOutletContext]="{subcategories:subcategoria.subcategories}">
+        </ng-container>
+      </div>
+    </div>
+</ng-template>

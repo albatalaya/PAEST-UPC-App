@@ -1,0 +1,21 @@
+[{
+    "id":375935,"creditsSuperats":90,"creditsRestants":209,"creditsTotals":300,"nomCat":"GRAU EN ENGINYERIA DE TECNOLOGIES I SERVEIS DE TELECOMUNICACIÓ","nomEng":"DEGREE IN ARCHITECTURE STUDIES","nomEsp":"GRADO EN ESTUDIOS DE ARQUITECTURA",
+    "subjects":[
+        {"codiUPC":"230066","convocatoria":1,"credits":6,"curs":2020,"grup":"30","nomCat":"Anàlisi i Avaluació de Xarxes","nomEng":"Conditioning and Services I","nomEsp":"Análisis y evaluación de redes","semester":"2", "shortName":"AAX",
+            "professors":[
+                {"grup":"30","cognoms":"PALLARES SEGARRA","nom":"ESTEVE", "id_prof": 1002746}]},
+        {"codiUPC":"230156","convocatoria":1,"credits":6,"curs":2020,"grup":"10","nomCat":"Gestió d'Internet","nomEng":"History I","nomEsp":"Gestión de Internet","semester":"2","shortName":"GI",
+            "professors":[
+                {"grup":"10","cognoms":"BARBA MARTI","nom":"ANTONIO", "id_prof": 1002061}]},
+        {"codiUPC":"230161","convocatoria":1,"credits":6,"curs":2020,"grup":"30","nomCat":"Sistemes de Suport a les Comunicacions","nomEng":"Architectural Representation I","nomEsp":"Sistemas de Soporte a las Comunicaciones Móviles","semester":"2","shortName":"SSCMOB",
+            "professors":[
+                {"grup":"30","cognoms":"PARADELLS ASPAS","nom":"JOSE", "id_prof": 1002123},
+                {"grup":"10","cognoms":"CALVERES AUGE","nom":"ANA M.", "id_prof": 1002745}]},
+        {"codiUPC":"230162","convocatoria":1,"credits":12,"curs":2020,"grup":"30","nomCat":"Projecte Avançat d'Enginyeria de Sistemes Telemàtics","nomEng":"Design II","nomEsp":"Proyecto Avanzado de Ingeniería de Sistemas Telemáticos","semester":"2","shortName":"PAEST",
+            "professors":[
+                {"grup":"30","cognoms":"BRAGÓS BARDIA","nom":"RAMÓN", "id_prof": 1002262},
+                {"grup":"30","cognoms":"SARDA FERRER","nom":"JOAN", "id_prof":  1002580},
+                {"grup":"30","cognoms":"VIDAL LOPEZ","nom":"EVA MARIA", "id_prof": 1002599},
+                {"grup":"30","cognoms":"PEGUEROLES VALLES","nom":"JOSEP RAFAEL", "id_prof": 1003202},
+                {"grup":"30","cognoms":"CALVERES AUGE","nom":"ANA M.", "id_prof": 1002745}]}]
+}]

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        {{ 'NEWS.TITLE' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="errorNews">
+    <app-errors [error]="errorNews"></app-errors>
+  </div>
+  <div class="content-news" *ngIf="news && errorNews === undefined; else skeleton">
+    <app-card-news class="card-news" *ngFor="let item of news" [newsItem]="item" [routerLink]="[item?.idAPI]" [queryParams]="{backPage: '/pages/news'}">
+    </app-card-news>
+  </div>
+  <ng-template #skeleton>
+      <div *ngIf="errorNews === undefined" class="skeleton-content-card">
+          <div class="card-skeleton" *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8 ]">
+                <div class="card-skeleton-img">
+                  <ion-skeleton-text animated></ion-skeleton-text>
+                </div>
+                <div>
+                <div>
+                    <ion-skeleton-text animated></ion-skeleton-text>
+                </div>
+                <div>
+                    <ion-skeleton-text animated></ion-skeleton-text>
+                </div>
+                </div>
+          </div>
+        </div>
+    </ng-template>
+  <ion-infinite-scroll *ngIf="news && errorNews === undefined" threshold="100px" (ionInfinite)="loadMoreNews($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

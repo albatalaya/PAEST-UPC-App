@@ -1,0 +1,40 @@
+ion-content {
+    --background: var(--ion-color-white);
+}
+
+ion-item {
+    --background: var(--ion-color-white);
+}
+
+.div-subtitle-settings {
+    margin-top: 10px;
+}
+
+.label-language {
+    font-weight: 600;
+}
+
+.my-split-line {
+    height: 2px;
+    width: 80%;
+}
+
+.div-icon-menu {
+    margin-right: 10px
+}
+
+.footer-version {
+    position: absolute; 
+    bottom: 0px; 
+    width: 100%;
+    text-align: center;
+    color: var(--ion-color-primary);
+}
+
+.app-version {
+    margin-top: -4%;
+}
+
+.copyright {
+    color: black;
+}
