@@ -7,8 +7,8 @@ It consisted of adding a new implementation to the already existing students’ 
 Adrián Soria Montoya \
 Blanca Ruiz Díaz\
 Héctor Pérez Díaz\
-Alba Talaya Vidal\
-Youssef El Houas Ghouddana
+Youssef El Houas Ghouddana\
+Alba Talaya Vidal
 
 
 ## VIDEO DEMO
